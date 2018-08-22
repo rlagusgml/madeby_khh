@@ -1,0 +1,289 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	list-style: none;
+	text-decoration: none;
+	color: #222;
+	font-size: 14px;
+}
+/*layout*/
+.wrap{
+	width: 1100px;
+	margin: 0 auto;
+}
+.header{
+	height: 650px;
+	background: url() 0 0 no-repeat;
+	position: relative;
+	background: url(../images/main.png) 0 0 no-repeat;
+}
+.logo{
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+.logo h1{
+	text-indent: -9999px;
+	font-size: 0px;
+	width: 314px;
+	height: 145px;
+	background:url(../images/logo.png) 0 0 no-repeat;
+}
+.nav{
+	position: absolute;
+	top: 30px;
+	right: 0;
+}
+
+.slide_list{
+	position: absolute;
+	top:600px;
+	margin-left: 205px;
+}
+.slide_wrap{
+	position: relative;
+	width: 895px;
+	height: 289px;
+	overflow: hidden;
+}
+.slide_wrap ul{
+	width: 1815px;
+	height: 289px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slide_list li{
+	float:left;
+	width: 205px;
+}
+.slide_list li:nth-child(2),
+.slide_list li:nth-child(5),
+.slide_list li:nth-child(7){
+	padding: 0 25px;
+}
+.slide_list li:nth-child(3){
+	padding-right: 25px;
+}
+.slide_list li:nth-child(4){
+}
+.contents{
+	width: 1100px;
+	
+}
+.col{
+
+}
+.txt_box_1{
+	width: 690px;
+	margin: 0 auto;
+	padding-top: 270px; 
+}
+.txt_box_1 span{
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid #000; 
+}
+.txt_box_1 strong{
+	font-size: 27px;
+	display: block;
+	padding: 15px 0 7px;
+	color: #666;
+}
+.txt_box_1 p{
+	color: #666;
+}
+.txt_01{
+	height: 650px;
+	background: rgba(0,0,0,0.1);
+}
+.thumb{
+	position: relative;
+
+}
+.thumb_bg{
+	width: 1100px;
+	height: 260px;
+	background: rgba(0,0,0,0.5);
+	
+}
+.thumb_list ul{
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin-right: -345px;
+	width: 690px;
+	height: 400px;
+	z-index: 10;
+}
+.thumb_list li{
+	float: left;
+	height: 400px;
+	width: 345px;
+	background: #d7d7d7;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+}
+.thumb_list li:hover{
+	background: rgba(255, 85, 255, 0.333);
+}
+.thumb_list li:hover::after{
+	content:"Go";
+	background:rgba(0,0,0,0.6);
+	width: 345px;
+	height: 40px;
+	cursor: pointer;
+	position: absolute;
+	top: 400px;
+	left: 0;
+	z-index: 10;
+	color: #fff;
+	padding: 10px 0; 
+	font-size: 25px;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+}
+.thumb_list li::after:hover{
+	color: #000;
+	background:#fff;
+	z-index: 30;
+}
+.thumb_list li img{
+	margin-top: 25px; 
+	margin-bottom: 25px;
+}
+.thumb_list li strong{
+	font-size: 25px;
+}
+.thumb_list li span{
+	font-size: 16px;
+	padding-top: 7px;
+	display: block;
+}
+
+.txt_02{
+	height: 390px;
+}
+.txt_box_2{
+	width: 690px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.txt_box_2 span{
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 1px solid #000; 
+}
+.txt_box_2 strong{
+	font-size: 27px;
+	display: block;
+	padding: 15px 0 7px;
+	color: #666;
+}
+.txt_box_2 p{
+	color: #666;
+}
+
+
+.goto_list{
+	height:360px;
+}
+.goto_list ul{
+	width: 690px;
+	height: 164px;
+	background: #d7d7d7;
+	margin: 0 auto;
+}
+.goto_list li{
+	width: 138px;
+	height: 164px;
+	float: left;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+}
+.goto_list li img{
+	margin-top: 15px;
+}
+.goto_list li span{
+	display: block;
+	padding-top: 15px;
+	font-weight: bold;
+	color: #666;
+	font-size: 16px;
+}
+.goto_list li:nth-child(2){
+	background: #f2f2f2;
+}
+.goto_list li:nth-child(4){
+	background: #f2f2f2;
+}
+.goto_list li:nth-child(2):hover,
+.goto_list li:nth-child(4):hover{
+	z-index: 10;
+}
+.goto_list li:hover{
+	opacity: 0.5;
+	cursor: pointer;
+
+}
+.goto_list li:hover::after{
+	content:"Go";
+	background:rgba(0,0,0,0.4);
+	width: 138px;
+	height:20px;
+	cursor: pointer;
+	position: absolute;
+	top: 164px;
+	left: 0;
+	z-index: 20;
+	color: #fff;
+	padding: 5px 0 10px; 
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+footer{
+	width: 1100px;
+	margin: 0 auto;
+	height: 130px;
+	background: rgba(0,0,0,0.1);
+}
+.foot_list{
+	height: 35px;
+	padding: 33px 50px 0;
+}
+.newsletter{
+	float: left;
+}
+.newsletter a{
+	font-weight: bold;
+	color: #666;
+	font-size: 16px;
+}
+.foot_list ul{
+	float: right;
+
+}
+.foot_list li{
+	float: left;
+}
+.foot_list li a{
+	font-weight: bold;
+	color: #666;
+	font-size: 16px;
+}
+.foot_list li a:hover{
+	color: #fff;
+}
+.foot_list li span{
+	padding: 0 10px 0 10px;
+	color: #666;
+}
+.copyright{
+	float: left;
+	padding-left: 50px;
+	color: #666;
+}
