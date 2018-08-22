@@ -1,0 +1,414 @@
+@charset "utf-8";
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'a아시아헤드1'; 
+    color: #222;
+    font-size: 14px;
+}
+html *{
+  cursor: url(../imgs/pointer-hover.png), auto;
+  cursor: -webkit-image-set(url(../images/pointer.png)2x), auto;
+
+}
+a:hover,
+a:hover * {
+    cursor: url(../imgs/pointer-hover.png), auto;
+    cursor:-webkit-image-set(url(../images/pointer-hover.png)2x), auto;
+}
+
+/*layout*/
+.wrap{
+    width: 1100px;
+    margin: 0 auto;
+}
+.header{
+    width: 1100px;
+    height: 200px;
+}
+.logo{
+    float: left;
+    padding-top: 50px;
+}
+.logo h1{
+    text-indent: -9999px;
+    width: 200px;
+    height: 60px;
+    background: url(../images/logo2.png) 0 0 no-repeat;
+}
+.nav{
+    float: right;
+    padding-top: 70px;
+}
+.menu_depth1 li{
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+.menu_depth1 li a{
+    font-size: 16px;
+    font-family: 'a로케트';
+    color: #ffc500;
+}
+.menu_depth1 li a:hover{
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+}
+.menu_depth2{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 150px;
+    height: 130px;
+    padding-top: 20px;
+    background: rgba(255,255,255,0.9);
+    z-index: 10;
+    display: none;
+}
+.menu_depth2 li{
+    line-height: 30px;
+}
+.menu_depth2 li a{
+    font-size: 14px;
+    color: #666;
+    font-family: 'a아시아헤드1';
+    display: block;
+    width: 150px;
+    height: 30px;
+}
+.menu_depth2 li a:hover{
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    background: #ffc500;
+}
+.main_img{
+    float: left;
+    width: 1100px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.main_img img{
+    width: 100%;
+    position: absolute;
+    top: -22%;
+    left: 0;
+}
+.contents{
+    float: left;
+    width: 1100px;
+    margin-top: 100px;
+}
+.contents h2{
+    font-family:KoreanTIMS-R, KoreanTIMSR;
+    font-size:30px;
+    height: 50px;
+    border-bottom: 2px solid #ffc500;
+    font-weight: bold;
+    color: #ffc500;
+/*    text-align: center;*/
+}
+.contents h3{
+    color: #666;
+    height: 70px;
+    font-size: 25px;
+    line-height: 70px;
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: 'a아시아헤드3';
+/*    font-stretch: expanded;*/
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+.product_wrap{
+    width: 1100px;
+    height: 1300px;
+}
+/*사탕리스트*/
+.product_1{
+    width: 1100px;
+    height: 400px;
+    float: left;
+    padding: 50px 0 100px;
+}
+
+.candy_slide_wrap{
+    height: 300px;
+    width: 570px;
+    margin: 0 auto;
+}
+.candy_slide{
+    position: relative;
+    width: 570px;
+    height: 170px;
+    overflow: hidden;
+}
+.candy_list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1170px;
+}
+.candy_list li{
+    float: left;
+    width: 120px;
+    height: 170px;
+    opacity: 1;
+}
+.candy_list li{
+    display: inline-block;
+    text-align: center;
+}
+.candy_list li:hover{
+    opacity: 0.6;
+}
+.candy_list li a{
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+.candy_list li:nth-child(1),
+.candy_list li:nth-child(2),
+.candy_list li:nth-child(3),
+.candy_list li:nth-child(4),
+.candy_list li:nth-child(5),
+.candy_list li:nth-child(6),
+.candy_list li:nth-child(7){
+    margin-right: 30px;
+}
+.candy_list li span{
+    display: block;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'a아시아헤드4';
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffc500;
+    cursor: pointer;
+}
+.candy_slide_wrap button{
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -150px;
+    display: block;
+    border-style: none;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    background: #ffc500;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'a아시아헤드2';
+    box-sizing: border-box;
+    border-radius: 5px;
+    opacity: 1;
+    cursor: pointer;
+}
+.candy_slide_wrap button a{
+    font-size: 16px;
+    font-family: 'a아시아헤드2';
+    color: #fff;
+    text-shadow: rgba(0,0,0,0.8);
+}
+.candy_slide_wrap button:hover{
+    opacity: 0.6;
+}
+.candy_slide_wrap button:hover::after{
+    content: " 더보기";
+    width:400px;
+    height: 50px;
+    background: #ffc500;
+}
+/*콜라보*/
+.product_2{
+    float: left;
+    width: 1100px;
+    height: 350px;
+}
+.collabo_slide_wrap{
+    height: 300px;
+    width: 740px;
+    margin: 0 auto;
+}
+.collabo_slide{
+    position: relative;
+    width: 740px;
+    height: 290px;
+}
+.collabo_list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 740px;
+    height: 290px;
+}
+.collabo_list li{
+    float: left;
+    width: 230px;
+    height: 290px;
+    opacity: 1;
+}
+.collabo_list li:hover{
+    opacity: 0.6;
+}
+.collabo_list li img{
+    width: 100%;
+}
+.collabo_list li span{
+    text-align: center;
+    display: block;
+    width: 230px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    font-family: 'a아시아헤드3';
+    font-size: 16px;
+}
+.collabo_list li:nth-child(2){
+    margin: 0 25px;
+}
+.collabo_slide_wrap button{
+     position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -150px;
+    display: block;
+    border-style: none;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    background: #ffc500;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'a아시아헤드2';
+    box-sizing: border-box;
+    border-radius: 5px;
+    opacity: 1;
+    cursor: pointer;
+}
+.collabo_slide_wrap button a{
+    font-size: 16px;
+    font-family: 'a아시아헤드2';
+    color: #fff;
+    text-shadow: rgba(0,0,0,0.8);
+}
+.collabo_slide_wrap button:hover{
+    opacity: 0.6;
+}
+.collabo_slide_wrap button:hover::after{
+    content: " 더보기";
+    width: 350px;
+}
+
+.ect_wrap{
+    width: 1100px;
+    height: 600px;
+}
+.event_vanner{
+    float: left;
+    width: 400px;
+    margin-right:100px;
+}
+.event{
+    width: 400px;
+    margin-top: 50px;
+    height: 335px;
+    position: relative;
+    background: #fff;
+}
+.event img{
+    width: 100%;
+    opacity: 1;
+}
+.event img:hover{
+    opacity: 0.6;
+}
+.event:hover::after{
+    content: 'CLICK ME';
+    height: 75px;
+    width: 400px;
+    background: #ffc500;
+    position: absolute;
+    top: 335px;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'a로케트';
+    line-height:80px;
+    color: #fff;
+    text-shadow: 3px 3px 1px #666;
+/*    text-shadow: 3px 3px 1px #ffc500;*/
+    cursor: pointer;
+}
+.vedio{
+    float: left;
+    width: 600px;
+}
+.vedio span{
+    font-size: 14px;
+    color: #c5c5c5;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+.vedio_img{
+    margin-top: 50px;
+    height: 410px;
+    width: 600px;
+    position: relative;
+    cursor: pointer;
+}
+.vedio_img img{
+    width: 100%;
+    opacity: 1;
+}
+.vedio_img img:hover{
+/*    opacity: 0.5;*/
+}
+.vedio_img:hover::after{
+    content: '" Red Velvet : VIDEO "';
+    height: 410px;
+    width: 600px;
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'a로케트';
+    line-height: 300px;
+    color: #fff;
+    text-shadow: 3px 3px 1px #666;
+}
+.footer{
+    float: left;
+    height: 300px;
+    width: 1100px;
+    background: #ffc500 url(../images/foot_back.png) 0 97% no-repeat;
+    background-size: cover;
+}
+.foot_list{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.foot_list a{
+    float: left;
+    font-style: normal;
+}
+.foot_list span{
+    padding: 0 10px 0 3px;
+}
+.copyright{
+    text-align: center;
+}
+
