@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+ <title>대한항공</title>
+ <link rel="icon" href="images/korean_logo.png">
+ <!-- 아래에 script 3.3.1.min.js 와 fullpage.js / link full_page.css는 무조건 작성이 되어아햡니다 -->
+ <script src="../../js/jquery-3.3.1.min.js"></script>
+ <script src="../../js/jquery.fullPage.js"></script>
+ <script src="js/comm.js"></script>
+ <link rel="stylesheet" href="../../css/jquery.fullPage.css">
+ <link rel="stylesheet" href="css/comm.css">
+ <!-- 아래는 구글 웹폰트에 대한 링크입니다 없어도 되고 있어도 됩니다. -->
+ <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Josefin+Sans|Raleway" rel="stylesheet">
+ <script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</head>
+<body>
+  <div id="wrapper"><!--id의 이름(wrapper)는 절대로 수정하면 안됩니다. -->
+  <!--마찬가지로 아래에 section <div>는 class의 이름을 절대로 수정하면 안됩니다.
+    하지만 id의 이름은 마음대로 지정해서 css를 바꾸어 줄 수 있습니다 -->
+
+    <!-- !!wrapper<div>안에 setcion<div>가 5개가 있으면 페이지가 5개가 자동으로 생성되고 setcion이 3개가 있으면 3개의 페이지가 자동으로 생성됩니다.!! 섹션안에 꾸미면서 제작을 하면 됩니다. -->
+    <div class="section" id="first_page">
+      <div class="header">
+        <div class="top_mini">
+          <div class="le_top">
+          <ul>
+            <li><a href="#">마일리지 적립몰</a><span>|</span></li>
+            <li><a href="#">기내면세점</a></li>
+          </ul>
+        </div>
+          <div class="ri_top">
+          <ul>
+            <li><a href="#">대한민국</a><span>|</span></li>
+            <li><a href="#">한국어</a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="logo"><a href="#"><h1>대한항공</h1></a></div>
+        <div class="gnb">
+          <div class="wrap_menubar">
+            <div class="menubar">
+              <ul class="menu_depth1">
+                <li><a href="#">항공권 예매</a>
+                    <ul class="menu_depth2 menu_depth2_1">
+                        <li><a href="#">국제선</a></li>
+                        <li><a href="#">국내선</a></li>
+                        <li><a href="#">예약조회 및 변경</a></li>
+                        <li><a href="#">체크인</a></li>
+                        <li><a href="#">출도착 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">프로모션/여행상품</a>
+                    <ul class="menu_depth2 menu_depth2_2">
+                        <li class="menu_depth2_event">이벤트
+                            <ul class="menu_depth3_event">
+                                <li><a href="#">할인 항공권</a></li>
+                                <li><a href="#">엑설런트 보딩패스</a></li>
+                                <li><a href="#">엑설런트 트랜짓 프로그램</a></li>
+                                <li><a href="#">서비스 개요</a></li>
+                                <li><a href="#">상품 안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu_depth2_pack">여행상품
+                            <ul class="menu_depth3_pack">
+                                <li><a href="#">해외여행상품</a></li>
+                                <li><a href="#">호텔</a></li>
+                                <li><a href="#">렌터카</a></li>
+                                <li><a href="#">해외여행자 보험</a></li>
+                                <li><a href="#">플라이트 아카데미</a></li>
+                                <li><a href="#">여행정보사이트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">스카이패스</a>
+                    <ul class="menu_depth2 menu_depth2_3">
+                        <li><a href="#">회원 혜택</a></li>
+                        <li><a href="#">마일리지 적립</a></li>
+                        <li><a href="#">항공 보너스 사용</a></li>
+                        <li><a href="#">비항공 보너스 사용</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">서비스 안내</a>
+                    <ul class="menu_depth2 menu_depth2_4">
+                        <li><a href="#">탑승수속</a></li>
+                        <li><a href="#">수하물</a></li>
+                        <li><a href="#">도움이 필요한 승객</a></li>
+                        <li><a href="#">공항 및 환승 정보</a></li>
+                        <li><a href="#">기내 및 클래스별서비스</a></li>
+                        <li><a href="#">항공기 안내</a></li>
+                        <li><a href="#">기내 면세품</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="nav_ico">
+              <ul>
+                <li><a href="#">MY</a></li>
+                <li><a href="#">SERCH</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="contents_first">
+        <div class="slogan">
+          <h2>여행은 인생이다</h2>
+          <h3>한진관광 KALPAK</h3>
+        </div>
+        <div class="main_ticket_box">
+          <div class="tab">
+              <div class="mileage">
+                <button class="tablinks button_1" onclick="openCity(event, '마일리지')">마일리지</button>
+              </div>
+              <div class="choice_group">
+                <button class="tablinks button_2" onclick="openCity(event, '왕복')">왕복</button>
+                <button class="tablinks button_3" onclick="openCity(event, '편도')">편도</button>
+                <button class="tablinks button_4" onclick="openCity(event, '다구간 >')">다구간 ></button>
+                <div class="between_border"></div>
+              </div>
+            <!--  <div class="q&a">다구간이란?</div>-->
+            </div>
+            <div id="왕복" class="tabcontent roundtrip">
+              <div class="trip_type_option_wrap_roundtrip">
+                <div class="airport_departure_wrap">
+                  <ul class="airport airport_departure">
+                    <li class="airport_1 departure_list">
+                        <select id="airport_1 departure_list" name="airport_1 departure_list" class="airport_1 departure_list">
+                          <option value="" selected="airport_1 departure_list">출발지</option>
+                        </select>
+                    </li>
+                    <li class="airport_1 arrival_list">
+                        <select id="airport_1 arrival_list" name="airport_1 arrival_list" class="airport_1 arrival_list">
+                          <option value="" selected="airport_1 arrival_list">도착지</option>
+                        </select>
+                    </li>
+                    <li class="airport_1 calender_departure">
+                        <select id="airport_1 calender_departure" name="airport_1 calender_departure" class="airport_1 calender_departure">
+                          <option value="" selected="airport_1 calender_departure">출발일</option>
+                        </select>
+                    </li>
+                    <li class="airport_1 booking_option">
+                        <select id="airport_1 booking_option" name="airport_1 booking_option" class="airport_1 booking_option">
+                          <option value="" selected="airport_1 booking_option">탑승객</option>
+                        </select>
+                    </li>
+                    <li class="airport_1 flight_class">
+                        <select id="airport_1 flight_class" name="airport_1 flight_class" class="airport_1 flight_class">
+                          <option value="" selected="airport_1 flight_class">좌석등급</option>
+                       </select>
+                    </li>
+                  </ul>
+                </div>
+                <div class="airport_arrival_wrap">
+                 <ul class="airport airport_arrival">
+                    <li class="airport_2 departure_list">
+                        <select id="airport_2 departure_list" name="airport_2 departure_list" class="airport_2 departure_list">
+                          <option value="" selected="airport_2 departure_list">출발지</option>
+                        </select>
+                    </li>
+                    <li class="airport_2 arrival_list">
+                        <select id="airport_2 arrival_list" name="airport_2 arrival_list" class="airport_2 arrival_list">
+                          <option value="" selected="airport_2 arrival_list">도착지</option>
+                        </select>
+                    </li>
+                    <li class="airport_2 calender_arrival">
+                        <select id="airport_2 calender_arrival" name="airport_2 calender_arrival" class="airport_2 calender_arrival">
+                          <option value="" selected="airport_2 calender_arrival">도착일</option>
+                        </select>
+                    </li>
+                    <li class="airport_2 booking_option">
+                        <select id="airport_2 booking_option" name="airport_2 booking_option" class="airport_2 booking_option">
+                          <option value="" selected="airport_2 booking_option">탑승객</option>
+            <!--
+                          <option value="count">1</option>
+                          <option value="count">2</option>
+                          <option value="count">3</option>
+                          <option value="count">4</option>
+                          <option value="count">5</option>
+                          <option value="count">6</option>
+                          <option value="count">7</option>
+                          <option value="count">8</option>
+                          <option value="count">9</option>
+                          <option value="count">10</option>
+                          <option value="count">1</option>
+                          <option value="count">2</option>
+                          <option value="count">3</option>
+                          <option value="count">4</option>
+                          <option value="count">5</option>
+                          <option value="count">6</option>
+                          <option value="count">7</option>
+                          <option value="count">8</option>
+                          <option value="count">9</option>
+                          <option value="count">10</option>
+                          <option value="count">1</option>
+                          <option value="count">2</option>
+                          <option value="count">3</option>
+                          <option value="count">4</option>
+                          <option value="count">5</option>
+                          <option value="count">6</option>
+                          <option value="count">7</option>
+                          <option value="count">8</option>
+                          <option value="count">9</option>
+                          <option value="count">10</option>
+            -->
+                        </select>
+                    </li>
+                    <li class="airport_2 flight_class">
+                        <select id="airport_2 flight_class" name="airport_2 flight_class" class="airport_2 flight_class">
+                          <option value="" selected="airport_2 flight_class">좌석등급</option>
+                       </select>
+                    </li> 
+                  </ul>
+                </div>
+              </div>
+              <button>조회</button>
+            </div>
+            <div id="편도" class="tabcontent oneway">
+              <div class="trip_type_option_wrap_oneway">
+                <div class="oneway_wrap">
+                  <ul class="airport_oneway airport_departure">
+                    <li class="airport_3 departure_list">
+                        <select id="airport_3 departure_list" name="airport_3 departure_list" class="airport_3 departure_list">
+                          <option value="" selected="airport_3 departure_list">출발지</option>
+                        </select>
+                    </li>
+                    <li class="airport_3 arrival_list">
+                        <select id="airport_3 arrival_list" name="airport_3 arrival_list" class="airport_3 arrival_list">
+                          <option value="" selected="airport_3 arrival_list">도착지</option>
+                        </select>
+                    </li>
+                    <li class="airport_3 calender">
+                        <select id="airport_3 calender" name="airport_3 calender" class="airport_3 calender">
+                          <option value="" selected="airport_3 calender">탑승일</option>
+                        </select>
+                    </li>
+                    <li class="airport_3 booking_option">
+                        <select id="airport_3 booking_option" name="airport_3 booking_option" class="airport_3 booking_option">
+                          <option value="" selected="airport_3 booking_option">탑승객</option>
+                        </select>
+                    </li>
+                    <li class="airport_3 flight_class">
+                        <select id="airport_3 flight_class" name="airport_3 flight_class" class="airport_3 flight_class">
+                          <option value="" selected="airport_3 flight_class">좌석등급</option>
+                       </select>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button>조회</button>
+            </div>
+            <div id="다구간" class="tabcontent tabcontent_3">
+              <h3>다구간</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+         </div>
+       </div>
+    </div>
+    <div class="section" id="two_page">
+      <div class="contents_two">
+        <div class="contents_text text_two">
+          <h2>예약조회</h2>
+          <h3>예약하신 항공권의 여정을 편리하게 확인하실 수 있습니다.</h3>
+        </div>
+        <div class="ticket_box box_reservation">
+            <div id="예약조회" class="tabcontent reserve">
+              <div class="trip_type_option_wrap_reserve">
+                 <div class="reserve_wrap">
+                    <ul class="airport_reserve_wrap">
+                       <li class="airport_reserve reservation_number">
+                           <select id="airport_reserve reservation_number" name="airport_reserve reservation_number" class="airport_reserve reservation_number">
+                              <option value="" selected="airport_reserve reservation_number">예약번호</option>
+                           </select>
+                           <span class="re_number_text">*예약번호는 8자리 숫자 또는 6자리 영문/숫자를 입력하세요.</span>
+                        </li>
+                        <li class="airport_reserve departure_list">
+                            <select id="airport_reserve departure_list" name="airport_reserve departure_list" class="airport_reserve departure_list">
+                              <option value="" selected="airport_reserve departure_list">출발지</option>
+                            </select>
+                        </li>
+                        <li class="airport_reserve arrival_list">
+                            <select id="airport_reserve arrival_list" name="airport_reserve arrival_list" class="airport_reserve arrival_list">
+                              <option value="" selected="airport_reserve arrival_list">도착지</option>
+                            </select>
+                        </li>
+                        <li class="airport_reserve calender">
+                            <select id="airport_reserve calender" name="airport_reserve calender" class="airport_reserve calender">
+                              <option value="" selected="airport_reserve calender">탑승일</option>
+                            </select>
+                        </li>
+
+                        <li class="airport_reserve booking_option">
+                            <select id="airport_reserve booking_option" name="airport_reserve booking_option" class="airport_reserve booking_option">
+                              <option value="" selected="airport_reserve booking_option">탑승객 성</option>
+                            </select>
+                            <span class="booking_text">*예시:KIM</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button>조회</button>
+                </div>
+        </div> 
+      </div>
+      <!-- <div class="boder_bottom"></div> -->
+    </div>
+    <div class="section"  id="third_page">
+      <div class="contents_third">
+        <div class="contents_text text_third">
+          <h2>체크인</h2>
+          <h3>원하시는 좌석의 탑승권을 미리 발급받고 공항에서 대기시간을 줄이세요.</h3>
+        </div>
+        <div class="ticket_box box_checkin">
+            <div id="체크인" class="tabcontent checkin">
+              <div class="trip_type_option_wrap_checkin">
+                <div class="checkin_wrap">
+                  <ul class="airport_checkin_wrap">
+                    <li class="checkin_list re_checkin_number">
+                       <span class="col1">예약번호</span>
+                       <span class="col2">:</span>
+                    </li>
+                    <li class="checkin_list">
+                        <select id="put_re_checkin_number" name="put_re_checkin_number" class="put_re_checkin_number">
+                          <option value="" selected="put_re_checkin_number">8자리 숫자 또는 6자리 영문/숫자</option>
+                        </select>
+                    </li>
+                    <li class="checkin_list">
+                        <select id="checkin_calendar" name="checkin_calendar" class="checkin_calendar">
+                          <option value="" selected="checkin_calendar">탑승일</option>
+                        </select>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button>예약조회</button>
+            </div>
+        </div>
+      </div>
+<!-- <div class="boder_bottom"></div> -->
+    </div>
+    <div class="section"  id="fourth_page">
+      <div class="contents_fourth">
+        <div class="contents_text text_fourth">
+          <h2>대한항공 웹 체크인</h2>
+          <h3>집에서 하는 탑승수속, 빠르고 간편한 웹체크인을 이용해 보세요!</h3>
+          <button>자세히보기</button><button>이벤트더보기</button>
+        </div>
+      </div>
+      <!-- <div class="boder_bottom"></div> -->
+    </div>
+    <div class="section"  id="fifth_page">
+      <div class="contents_fifth">
+        <div class="contents_text text_fifth">
+          <h2>출도착 조회</h2>
+          <h3>취항지 출도착 스케줄을 상세하게 확인하실 수 있습니다.</h3>
+        </div>
+      </div>
+      <div class="ticket_box box_timecheck">
+        <div id="출도착 조회" class="tabcontent timecheck">
+          <div class="trip_type_option_wrap_timecheck">  
+            <div class="timecheck_wrap">
+              <ul class="airport_timecheck_wrap">
+                <li class="timecheck_list timecheck_route">
+                  <span class="col1">노선조회</span>
+                  <span class="col2">:</span>
+                 </li>
+                 <li class="timecheck_list">
+                   <select id="timecheck_departure" name="timecheck_departure" class="timecheck_departure">
+                     <option value="" selected="timecheck_departure">출발지</option>
+                   </select>
+                 </li>
+                 <li class="timecheck_list">
+                    <select id="timecheck_arrival" name="timecheck_arrival" class="timecheck_arrival">
+                      <option value="" selected="timecheck_arrival">도착지</option>
+                    </select>
+                 </li>
+                 <li class="timecheck_list timecheck_calender_wrap">
+                    <select id="timecheck_calender" name="timecheck_calender" class="timecheck_calender">
+                      <option value="" selected="timecheck_calender">탑승일</option>
+                    </select>
+                    <span class="timecheck_calender_text">* 출발지 기준</span>
+                 </li>
+               </ul>
+             </div>
+           </div>
+          <button>조회</button>
+         </div>
+      </div>
+      <!-- <div class="boder_bottom"></div> -->
+    </div>
+    
+    
+    <div class="section"  id="sixth_page">
+      <div class="contents_sixth">
+        <div class="contents_text text_sixth">
+          <h2>이벤트</h2>
+          <h3>대한항공의 특별한 혜택을 누려보세요.</h3>
+        </div>
+        <div class="event_slide_wrap">
+          <div class="slide_event">
+            <ul>
+              <li>
+                <a href="#"><img src="images/event_1.png" alt="아드리아해의 보석, 크로아티아"></a>
+                <div class="slide_text">
+                  <strong>아드리아해의 보석,크로아티아</strong>
+                  <span>자그레브행 항공권 검색하고<br>할인쿠폰 + 푸짐한 경품 받자!</span>
+                </div> 
+              </li>
+              <li>
+                <a href="#"><img src="images/event_2.png" alt="꿈의 비행 787"></a>
+                <div class="slide_text">
+                  <strong>꿈의 비행 787</strong>
+                  <span>대한민국에서도 꿈의 비행이 시작됩니다.</span>
+                </div>
+              </li>
+              <li>
+                <a href="#"><img src="images/event_3.png" alt="대한항공 x 스카이숍 계정연동"></a>
+                <div class="slide_text">
+                  <strong>대한항공 X 스카이숍 계정연동</strong>
+                  <span>스카이포인트 200p 즉시 적립!</span>
+                </div>
+                
+              </li>
+              <li>
+                <a href="#"><img src="images/event_4.png" alt="SKYSHOP 항공권 제휴할인"></a>
+                <div class="slide_text">
+                  <strong>SKYSHOP 항공권 제휴할인</strong>
+                  <span>기내면세 온라인쇼핑 5%할인</span>
+                </div>
+                
+              </li>
+              <li>
+                <a href="#"><img src="images/event_5.png" alt="대한항공을 통해 호텔을 예약해보세요"></a>
+                <div class="slide_text">
+                  <strong>대한항공을 통해<br>호텔을 예약해보세요</strong>
+                  <span>미화 1달러당 1마일리지 적립</span>
+                </div>
+                
+              </li>
+              <li>
+                <a href="#"><img src="images/event_6.png" alt="HERTZ 렌터카 추가 할인 이벤트"></a>
+                <div class="slide_text">
+                  <strong>HERTZ 렌터카 추가 할인 이벤트</strong>
+                  <span>렌터카 추가 할인 등의 혜택을 만나보세요!</span>
+                </div>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section"  id="seventh_page">
+      <div class="contents_seventh">
+        <div class="contents_text text_seventh">
+          <div class="text_seventh_title">
+              <h2>특가항공권<img src="images/korean_logo.png" alt="korean_logo"></h2>
+              <h3>대한항공이 준비한 특가항공권을 만나보세요!</h3>
+          </div>
+          <div class="text_seventh_title_button">
+              <button>특가항공권 더보기+</button>
+          </div>
+        </div>
+        <div class="airline_ticket_slide_wrap">
+            <ul class="airline_ticket_slide">  
+              <li class="slide_img img_1">
+                <a href="#"><img src="images/airline_bg_1.png" alt="두바이 노선 항공권 이벤트"></a>
+                <div class="ticket_slide_text">
+                  <strong>두바이 노선 항공권 이벤트</strong>
+                  <span>상상하는 모든것, 두바이</span>
+                  <button>특가확인 하러가기!</button>
+                </div>
+              </li>
+              <li>
+                <div class="slide_img img_2">
+                  <a href="#"><img src="images/airline_bg_2.png" alt="베트남노선 항공권 이벤트"></a>
+                  <div class="ticket_slide_text">
+                    <strong>베트남노선 항공권 이벤트</strong>
+                    <span>매력적인 베트남으로 대한항공이 준비한 이벤트</span>
+                    <button>특가확인 하러가기!</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide_img img_3">
+                    <a href="#"><img src="images/airline_bg_3.png" alt="인천 ↔ 뉴욕"></a>
+                    <div class="ticket_slide_text">
+                      <strong>인천 ↔ 뉴욕</strong>
+                      <span>KRW 885.400부터</span>
+                      <button>특가확인 하러가기!</button>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide_img img_4">
+                    <a href="#"><img src="images/airline_bg_4.png" alt="인천 ↔ 시드니"></a>
+                    <div class="ticket_slide_text">
+                      <strong>인천 ↔ 시드니</strong>
+                      <span>KRW 1.041.400부터</span>
+                      <button>특가확인 하러가기!</button>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide_img img_5">
+                    <a href="#"><img src="images/airline_bg_5.png" alt="인천 ↔ 파리"></a>
+                    <div class="ticket_slide_text">
+                      <strong>인천 ↔ 파리</strong>
+                      <span>KRW 988.900부터</span>
+                      <button>특가확인 하러가기!</button>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide_img img_6">
+                    <a href="#"><img src="images/airline_bg_6.png" alt="인천 ↔ 홍콩"></a>
+                    <div class="ticket_slide_text">
+                      <strong>인천 ↔ 홍콩</strong>
+                      <span>KRW 383.400부터</span>
+                      <button>특가확인 하러가기!</button>
+                    </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section"  id="eighth_page">
+      <div class="contents_eighth">
+        <div class="contents_text text_eighth">
+            <div class="footer">
+                <div class="foot_list">
+                    <ul class="foot_depth1">
+                        <li class="foot_depth2_wrap">약관 및 규정
+                            <ul class="foot_depth2">
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">회원약관</a></li>
+                                <li><a href="#">운송약관</a></li>
+                                <li><a href="#">위치기반서비스 이용약관</a></li>
+                                <li><a href="#">소비자 안전 관련 정보 공개</a></li>
+                                <li><a href="#">운임 및 서비스 요금표</a></li>
+                            </ul>
+                        </li>
+                        <li class="foot_depth2_wrap">기타 안내
+                            <ul class="foot_depth2">
+                                <li><a href="#">고객 안내 서비스</a></li>
+                                <li><a href="#">항공교통이용자 서비스 계획</a></li>
+                                <li><a href="#">항공교통이용자 피해구제</a></li>
+                                <li><a href="#">관련 사이트</a></li>
+                                <li><a href="#">사이트맵</a></li>
+                            </ul>
+                        </li>
+                        <li class="foot_depth2_wrap">고객지원
+                            <ul class="foot_depth2">
+                                <li><a href="#">지점 연락처</a></li>
+                                <li><a href="#">고객의 말씀</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">e 서식함</a></li>
+                                <li><a href="#">채팅 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li class="foot_depth2_wrap">회사소개
+                            <ul class="foot_depth2">
+                                <li><a href="#">대한항공에 대하여</a></li>
+                                <li><a href="#">경영 재무 정보</a></li>
+                                <li><a href="#">녹색경영</a></li>
+                                <li><a href="#">사회공헌활동/초등학생견학</a></li>
+                                <li><a href="#">뉴스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="visit_korea">
+                        <a href="#"><img src="images/visitkorea.png" alt="한국 방문의 해"></a>
+                    </div>
+                </div>
+                <address>(주) 대한항공 | 대표이사 : 우기홍 외 2명 | 주소 : 서울특별시 강서구 하늘길 260 | 대표전화 : 1588-2001 / 02-2656-2001<br>
+                사업자 등록번호 : 110-81-14794 | 통신판매업신고 : 강서 제 16-3010 | 개인정보보호책임자 : 여객사업본부장 마원 전무</address>
+                <div class="copyright">ⓒ2018 KOREAN AIR</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 스트립트의 기본설정입니다 보통 body안 끝에 넣어주면 됩니다. -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+     $('#wrapper').fullpage({
+               // 네비게이션의 설정입니다.
+               menu: '#menu',
+               lockAnchors: true,
+               verticalCentered: false,
+           // sectionsColor=각 섹션별 색상을 지정해 줍니다 ex) ['#fff, #red, #blue, ...']
+           sectionsColor: [''],
+           navigation: true,
+           // 오른쪽 네비게이션바의 위치를 설정해 줍니다
+           navigationPosition: 'right',
+           // 네이게이션에 이름을 설정합니다.
+           // 오른쪽 네비게이션에 각섹션별 이름을 확인시켜줍니다.
+           navigationTooltips: ['HOME', 'RESERV', 'CHECKIN', 'WEB CHECK','TIME CHECK', 'EVENT', 'EVENT TICKET', 'GOTO'],
+           showActiveTooltip: 'true',
+           slidesNavigation: 'true',
+           slidesNavPosition: 'bottom',
+           // 마지막 페이지에서 다시 되돌아갑니다.
+           loopBottom: true,
+         });
+
+   });
+ </script>
+</body>
+</html>

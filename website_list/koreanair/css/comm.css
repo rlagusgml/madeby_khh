@@ -1,0 +1,1295 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;;font-family:'Noto Sans','맑은고딕', 'Malgun Gothic','돋움',dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+/*상단에 gnb 메뉴에 들어간 폰트입니다.*/
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Hind Siliguri', sans-serif;*/
+
+/*헤더 설정입니다*/
+
+#first_page{
+	background: url(../images/bg_1.png) 35% 0 no-repeat;
+	position: relative;
+	text-align: center;
+}
+#first_page::before{
+	position: absolute;
+	/*background:  url(../imgs/grid.png) 0 0 repeat;*/
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+}
+.header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+/*	background: rgba(255,255,255,.25);
+*/	height: 30%;
+}
+.top_mini{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	background: #2f4a65;
+}
+.le_top li,.ri_top li{
+	float: left;
+	font-size: 12px;
+	color: #fefefe;
+	margin-top: 2px;
+}
+.le_top li a,.ri_top li a{
+	color: #fefefe;
+}
+.le_top li a:hover,.ri_top li a:hover{
+    color: #c5c5c5;
+}
+.le_top li span,.ri_top li span{
+	padding: 0 10px;
+}
+.le_top{
+	float: left;
+	margin-left:30px;
+	margin-top: 5px;
+}
+.ri_top{
+	float: right;
+	margin-right:30px;
+	margin-top: 5px;
+}
+.logo{
+    float: left;
+    margin-top:70px;
+	margin-left: 50px;
+    width: 20%;
+	height: 45px;
+}
+.logo a{
+    width: 100%;
+    height: 100%;
+}
+.logo h1{
+	text-indent: -9999px;
+	background: url(../images/header_logo.png) 0 0 no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 45px;
+}
+.gnb{
+	height: 150px;
+}
+.wrap_menubar{
+	float: right;
+	padding-top:90px;
+	padding-bottom: 10px;
+	width: 67%;
+	/*height: 40px;*/
+}
+.menu_depth1{
+	float: left;
+/*    margin-left: 40px*/
+}
+.menu_depth1 li{
+    position: relative;
+	float: left;
+     width:160px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.menu_depth1 li a{
+	font-family: 'Hind Siliguri', sans-serif;
+	color: #333;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: -1;
+    transition: 0.3s;
+}
+.menu_depth1 li a:hover{
+    color: #526e84;
+}
+.menu_depth2{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 160px;
+    height: 180px;
+    background: #fff;
+    background: rgba(250,250,250,0.9);
+    z-index: 60;
+    display: none;
+}
+.menu_depth2 li{
+    width:160px;
+    height: 23px;
+    margin-top: 10px;
+    text-align: center;
+}
+.menu_depth2 li a{
+    font-size: 14px;
+    font-weight: 530;
+    color: #666;
+    transition: 0.5s;
+    width:160px;
+    height: 23px;
+    line-height: 23px;
+    display: block;
+}
+.menu_depth2 li a:hover{
+    color: #526e84;
+    font-weight: 900;
+}
+
+
+/*프로모션 여행상품*/
+.menu_depth2_2{
+    width: 370px;
+    height: 270px;
+    padding: 0 10px;
+}
+.menu_depth2_2 li{
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    width: 180px;
+}
+.menu_depth2_2 li a{
+    width: 180px;
+}
+/*1이벤트*/
+.menu_depth2_event{
+    position: relative;
+    margin-right: 10px;
+}
+.menu_depth3_event{
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+/*2여행상품*/
+.menu_depth2_pack{
+    position: relative;
+}
+.menu_depth3_pack{
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.menu_depth2_3{
+    height: 160px;
+}
+.menu_depth2_4{
+    height: 240px;
+}
+
+
+
+/*아이콘*/
+.nav_ico {
+	float: right;
+	margin-right: 100px;
+}
+.nav_ico li{
+	float:left;
+	width: 50px;
+}
+.nav_ico li a:hover{
+    color: #00539a;
+}
+.contents_first{
+    width: 70%;
+
+    
+}
+.slogan{
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	width: 370px;
+	height: 150px;
+}
+.slogan h2{
+	font-weight: bold;
+	font-size: 50px;
+	color: #666;
+	float: left;
+}
+.slogan h3{
+	font-weight: lighter;
+	font-size: 26px;
+	color: #666;
+	float: right;
+	display: block;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+
+
+.main_ticket_box{
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	margin-left:-36% ;
+	display: inline-block;
+	color: #fff;
+	width: 72%;
+	height: 250px;
+	background:rgba(0,0,0,0.6);
+}
+
+.tab {
+    /*overflow: hidden;*/
+    /*border: 1px solid #ccc;*/
+    /*background-color: #f1f1f1;*/
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.tab button{
+    width: 120px;
+    height: 37px;
+}
+.mileage{
+	position: absolute;
+	top: 15%;
+	left:0;
+    box-sizing: border-box;
+    border: 1px solid #f1f1f1;
+}
+.choice_group{
+	position: absolute;
+	top: 15%;
+	left: 140px;
+    box-sizing: border-box;
+    border: 1px solid #f1f1f1;
+}
+.between_border{
+    height: 20px;
+    width: 120px;
+    margin-left: 120px;
+    margin-top:8px;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    /*background-color: inherit;*/
+    float: left;
+    border: 1px #fefefe;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #f1f1f1;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	position: absolute;
+	top:40%;
+	left: 50%;
+	margin-left: -46%;
+    width: 92%;
+    height: 110px;
+}
+
+
+/*왕복리스트*/
+.trip_type_option_wrap_roundtrip{
+	float: left;
+    margin-top: 5px;
+}
+.airport li{
+	float: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+.airport li:nth-of-type(2),
+.airport li:nth-of-type(3),
+.airport li:nth-of-type(4),
+.airport li:nth-of-type(5){
+    margin-left: 15px;
+}
+.airport select{
+    float: left;
+    border: 1px #fefefe;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 30px 0 10px;
+    width: 140px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #f1f1f1;
+    background: rgba(0,0,0,0);
+}
+.airport select:hover {
+    background-color: #ddd;
+    color: #666;
+    font-weight: bold;
+}
+.airport_departure_wrap{
+    height: 45px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.airport_arrival_wrap{
+    height: 45px;
+    width: 100%;
+    margin-top: 10px;
+}
+/*조회버튼*/
+.roundtrip button{
+	float: right;
+	cursor: pointer;
+	color: #f1f1f1;
+	width: 9%;
+	height: 100%;
+	border: 1px solid #f1f1f1;
+}
+.roundtrip button:hover{
+    background-color: #ddd;
+    color: #666;
+    font-weight: bold;
+}
+
+
+
+
+/*편도리스트*/
+.trip_type_option_wrap_oneway{
+	float: left;
+    margin-top: 5px;
+}
+.airport_oneway li{
+	float: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+.airport_oneway li:nth-of-type(2),
+.airport_oneway li:nth-of-type(3),
+.airport_oneway li:nth-of-type(4),
+.airport_oneway li:nth-of-type(5){
+    margin-left: 15px;
+}
+.airport_oneway select{
+    float: left;
+    border: 1px #fefefe;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 30px 0 10px;
+    width: 140px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #f1f1f1;
+    background: rgba(0,0,0,0);
+}
+.airport_oneway select:hover {
+    background-color: #ddd;
+    color: #666;
+    font-weight: bold;
+}
+.oneway_wrap{
+    height: 45px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*조회버튼*/
+.oneway button{
+	float: right;
+	cursor: pointer;
+	color: #f1f1f1;
+	width: 9%;
+	height: 50%;
+	border: 1px solid #f1f1f1;
+}
+.oneway button:hover{
+    background-color: #ddd;
+    color: #666;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.boder_bottom{
+	display: inline-block;
+	height: 10px;
+	width: 70px;
+	padding-top: 30px;
+	border-bottom: 2px solid #fff;
+}
+
+.oneway,
+.tabcontent_3{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#two_page{
+	position: relative;
+	background-color: #252561;
+	background: url(../images/bg_2.png) top no-repeat;
+	background-size: cover;
+}
+/*#two_page::before{
+	position: absolute;
+	background:  url(../imgs/grid.png) 0 0 repeat;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+}*/
+
+
+.text_two{
+	position: absolute;
+	top: 22%;
+	left: 50%;
+	width:500px;
+	height: 100px;
+	margin-left: -250px;
+	display: inline-block;
+	color: #333;
+	text-align: center;
+}
+.contents_text h2{
+	font-size: 40px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.contents_text h3{
+	font-size: 18px;
+	display: inline-block;
+	padding-top: 20px;
+	font-weight: lighter;
+}
+
+
+
+.ticket_box{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	margin-left:-35% ;
+	display: inline-block;
+	color: #fff;
+	width: 70%;
+	height:160px;
+	background:rgba(255,255,255,0.5);
+}
+.reserve{
+    position: absolute;
+	top:30%;
+	left: 50%;
+    height: 45px;
+}
+
+/*예약조회*/
+.trip_type_option_wrap_reserve{
+	float: left;
+}
+.reserve_wrap li{
+	float: left;
+    border-bottom: 1px solid #666;
+    height: 40px;
+    margin-top: 3px;
+}
+.reserve_wrap li:nth-of-type(2),
+.reserve_wrap li:nth-of-type(3),
+.reserve_wrap li:nth-of-type(4),
+.reserve_wrap li:nth-of-type(5){
+    margin-left: 15px;
+}
+.reserve_wrap select{
+    float: left;
+    border: 1px #fefefe;
+    outline: none;
+    cursor: pointer;
+    padding: 0 30px 0 5px;
+    width: 125px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #666;
+    background: rgba(0,0,0,0);
+    font-weight: bold;
+}
+.reserve_wrap select:hover {
+    background-color: rgba(0,0,0,0.6);
+    color: #f1f1f1;
+    font-weight: bold;
+}
+.reserve_wrap{
+    height: 45px;
+    width: 100%;
+}
+
+/*조회버튼*/
+.reserve button{
+	float: right;
+	cursor: pointer;
+	color: #666;
+	width: 15%;
+	height: 45px;
+	border: 1px solid #666;
+    background-color: rgba(0,0,0,0.6);
+    color: #f1f1f1;
+}
+.reserve button:hover{
+    color: #666;
+    background: rgba(0,0,0,0);
+/*
+    background-color: rgba(0,0,0,0.6);
+    color: #f1f1f1;
+*/
+    font-weight: bold;
+}
+
+.reserve_text{
+    float: left;
+    width: 100%;
+}
+
+.reservation_number{
+    position: relative;
+}
+.re_number_text{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 400px;
+    height: 20px;
+    color: #666;
+    font-size: 12px;
+}
+.booking_option{
+    position: relative;
+}
+.booking_text{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    color: #666;
+    font-size: 12px;
+}
+
+
+/*체크인*/
+#third_page{
+	position: relative;
+	background-color:#dedee6;
+	background-size: cover;
+}
+.text_third{
+	position: absolute;
+	top: 22%;
+	left: 50%;
+	width:600px;
+	height: 100px;
+	margin-left: -300px;
+	display: inline-block;
+	color: #333;
+	text-align: center;
+}
+.ticket_box{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	margin-left:-35% ;
+	display: inline-block;
+	color: #fff;
+	width: 70%;
+	height:160px;
+	background:rgba(255,255,255,0.5);
+}
+.checkin{
+    position: absolute;
+	top:35%;
+	left: 50%;
+    height: 45px;
+}
+
+.trip_type_option_wrap_checkin{
+	float: left;
+    width: 82%;
+}
+.checkin_wrap{
+    height: 45px;
+    
+}
+.checkin_wrap li{
+	float: left;
+    height: 40px;
+    margin-top: 3px;
+}
+.checkin_wrap li:nth-of-type(2),
+.checkin_wrap li:nth-of-type(3){
+    margin-left: 15px;
+    border-bottom: 1px solid #c5c5c5;
+}
+.checkin_wrap select:hover {
+    background-color: rgba(0,0,0,0.6);
+    color: #f1f1f1;
+    font-weight: bold;
+}
+.re_checkin_number{
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding-left: 5px;
+    width: 115px;
+    line-height:40px;
+    font-size: 15px;
+    color: #333;
+    background: rgba(0,0,0,0);
+    font-weight: bold;
+}
+.re_checkin_number .col2{
+    float: right;
+}
+.put_re_checkin_number{
+    float: left;
+    border: 1px #fefefe;
+    outline: none;
+    cursor: pointer;
+    padding: 0 5px;
+    width: 335px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #666;
+    background: rgba(0,0,0,0);
+    font-weight: 500;
+}
+.checkin_calendar{
+    float: left;
+    border: 1px #fefefe;
+    outline: none;
+    cursor: pointer;
+    padding: 0 5px;
+    width: 183px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #666;
+    background: rgba(0,0,0,0);
+    font-weight: 500;
+}
+.checkin button{
+	float: right;
+	cursor: pointer;
+	color: #666;
+	width: 17%;
+	height: 45px;
+	border: 1px solid #666;
+    background-color: rgba(0,0,0,0.6);
+    color: #f1f1f1;
+}
+.checkin button:hover{
+    color: #666;
+    background: rgba(0,0,0,0);
+/*
+    background-color: rgba(0,0,0,0.6);
+    color: #f1f1f1;
+*/
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/*웹체크인 이벤트*/
+#fourth_page{
+	position: relative;
+	background-size: cover;
+	background: url(../images/bg_4.png) top no-repeat;
+}
+.text_fourth{
+	position: absolute;
+	top: 15%;
+	left: 30%;
+	width:600px;
+	height: 100px;
+	margin-left: -300px;
+	display: inline-block;
+	color: #666;
+	text-align: left;
+}
+.text_fourth h2{
+	font-size: 45px;
+	font-weight: lighter;
+}
+.text_fourth h3{
+	font-size: 20px;
+	font-weight: lighter;
+	padding-top: 12px;
+}
+.text_fourth button{
+	font-size: 20px;
+	line-height: 20px;
+	color: #333;
+	margin-top: 25px;
+	box-sizing: border-box;
+	border-style: none;
+	border-radius: 2px;
+	background: rgba(255,255,255,0.7);
+	color: #666;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+	box-shadow: 2px 2px  5px rgba(0,0,0,0.5)
+}
+.text_fourth button:nth-of-type(1){
+    margin-right: 15px;
+}
+.text_fourth button:hover{
+	background: rgba(0,0,0,0.5);
+	color: #fefefe;
+}
+
+
+
+
+
+/*출도착조회*/
+#fifth_page{
+	position: relative;
+	background-size: cover;
+	background: url(../images/bg_5.png) top no-repeat;
+}
+.text_fifth{
+	position: absolute;
+	top: 22%;
+	left: 50%;
+	width:600px;
+	height: 100px;
+	margin-left: -300px;
+	display: inline-block;
+	color: #333;
+	text-align: center;
+}
+.box_timecheck{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	margin-left:-35% ;
+	display: inline-block;
+	color: #fff;
+	width: 70%;
+	height:160px;
+	background:rgba(255,255,255,0.5);
+}
+.timecheck{
+    position: absolute;
+	top:35%;
+	left: 50%;
+    height: 45px;
+}
+.trip_type_option_wrap_timecheck{
+	float: left;
+    width: 82%;
+}
+.timecheck_wrap{
+    height: 45px;
+}
+.timecheck_wrap li{
+	float: left;
+    height: 40px;
+    margin-top: 3px;
+}
+.timecheck_wrap li:nth-of-type(2),
+.timecheck_wrap li:nth-of-type(3),
+.timecheck_wrap li:nth-of-type(4){
+    margin-left: 15px;
+    border-bottom: 1px solid #c5c5c5;
+}
+.timecheck_wrap select{
+    float: left;
+    border: 1px #fefefe;
+    outline: none;
+    cursor: pointer;
+    padding: 0 5px;
+    width: 165px;
+    height: 40px;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #666;
+    background: rgba(0,0,0,0);
+    font-weight: 500;
+}
+.timecheck_wrap select:hover {
+    background-color: rgba(0,0,0,0.6);
+    color: #f1f1f1;
+    font-weight: bold;
+}
+.timecheck_route{
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding-left: 5px;
+    width: 120px;
+    line-height:40px;
+    font-size: 15px;
+    color: #333;
+    background: rgba(0,0,0,0);
+    font-weight: bold;
+}
+.timecheck_route .col2{
+    float: right;
+}
+.timecheck_calender_wrap{
+    position: relative;
+}
+.timecheck_calender_text{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    color: #666;
+}
+.timecheck button{
+	float: right;
+	cursor: pointer;
+	color: #666;
+	width: 17%;
+	height: 45px;
+	border: 1px solid #666;
+    background-color: rgba(0,0,0,0.6);
+    color: #f1f1f1;
+}
+.timecheck button:hover{
+    color: #666;
+    background: rgba(0,0,0,0);
+    font-weight: bold;
+}
+
+/*이벤트리스트*/
+#sixth_page{
+	position: relative;
+	background-size: cover;
+	background-color: #e5dccd;
+}
+.text_sixth{
+	position: absolute;
+	top: 19%;
+	left: 50%;
+	width:400px;
+	height: 100px;
+	margin-left: -200px;
+	display: inline-block;
+	color: #333;
+	text-align: center;
+}
+.event_slide_wrap{
+	position: absolute;
+	top: 37%;
+	left: 50%;
+	margin-left:-450px;
+	display: inline-block;
+	color: #fff;
+	width: 900px;
+	height:290px;
+}
+.slide_event{
+	width: 900px;
+	height: 290px;
+	overflow: hidden;
+    position: relative;
+}
+.slide_event ul{
+	width: 1830px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide_event li{
+	width: 280px;
+	height: 270px;
+	float: left;
+	background: #fff;
+	position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.slide_event li:nth-child(2),
+.slide_event li:nth-child(4){
+	margin: 0 30px;
+}
+.slide_event li:nth-child(5){
+	margin-right:30px;
+}
+.slide_event li a{
+    display: block;
+    width: 280px;
+	height: 150px;
+}
+.slide_event li img{
+    opacity: 0.5;
+    width: 100%;
+}
+.slide_event li img:hover{
+    opacity: 1;
+}
+.slide_event li:hover::after{
+	content:"자세히 보기";
+	text-align: center;
+    background: #666;
+	width: 280px;
+	height: 35px;
+    line-height: 35px;
+	cursor: pointer;
+	position: absolute;
+	top: 250px;
+	left: 0;
+	z-index: 30;
+	color: #fff;
+	font-size: 16px;
+}
+.slide_event li:nth-child(2):hover::after{
+	content:"마이크로 사이트 바로가기";
+	text-align: center;
+	background: #666;
+	width: 280px;
+	height: 35px;
+    line-height: 35px;
+	cursor: pointer;
+	position: absolute;
+	top: 250px;
+	left: 0;
+	z-index: 10;
+	color: #fff;
+	font-size: 16px;
+}
+
+.slide_text{
+    text-align: center;
+    width: 280px;
+    height: 80px;
+	position: absolute;
+	top: 170px;
+	left: 0;
+}
+.slide_text strong{
+	font-size:18px;
+    color: #555;
+    font-weight: bold;
+}
+.slide_text span{
+	margin-top: 5px;
+	font-size: 14px;
+	color: #666;
+	display: block;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#seventh_page{
+/*	background: url(../images/bg_7_2.jpg) top no-repeat;*/
+	background-size: cover;
+	position: relative;
+    background: #526e84;
+}
+.contents_seventh{
+    position: absolute;
+	top: 8%;
+	left: 50%;
+	width: 70%;
+	height: 600px;
+	margin-left: -35%;
+}
+.text_seventh{
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+	height: 100px;
+	color: #666;
+	z-index: 20;
+}
+.text_seventh_title{
+    width: 65%;
+    height: 100px;
+    float: left;
+}
+.text_seventh h2{
+	font-size: 45px;
+	font-weight: lighter;
+	color: #fff;
+    height: 50px;
+	text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+}
+.text_seventh h2 img{
+    width: 47px;
+    height: 47px;
+    margin-left: 7px;
+    margin-bottom: -5px;
+}
+.text_seventh h3{
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    padding-top: 10px;
+}
+.text_seventh_title_button{
+    width: 30%;
+    height: 100px;
+    float: right;
+}
+.text_seventh button{
+    float: right;
+	font-size: 18px;
+	line-height: 18px;
+    font-weight: lighter;
+	color: #fff;
+	padding:12px 30px;
+    margin-top: 58.52px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin-right: 3px;
+}
+.text_seventh button:hover{
+	background: rgba(0,0,0,0.5);
+	color: #fefefe;
+}
+.airline_ticket_slide_wrap{
+    position: absolute;
+	top: 120px;
+	left:0;
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+}
+.airline_ticket_slide{
+    position: relative;
+	width:100%;
+    height: 500px;
+    background: #fff;
+}
+.airline_ticket_slide{
+/*	display: -webkit-flex;*/
+/*	display: -moz-flex;*/
+/*	display: -ms-flex;*/
+/*	display: -o-flex;*/
+/*	display: flex;*/
+/*	width: 600%;*/
+/*	position: absolute;*/
+/*	top: 0;*/
+/*	left: 0;*/
+}
+.airline_ticket_slide li{
+    float: left;
+    width:100%;
+    height: 650px;
+    position: relative;
+    transition: 0.5s;
+}
+.slide_img img{
+    width: 100%;
+}
+.ticket_slide_text {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+    z-index: 50;
+    width: 390px;
+    height: 100px;
+}
+.ticket_slide_text strong{
+	font-size:30px;
+	font-weight: lighter;
+	margin-top: 12px;
+/*	color: #fff;*/
+    color: #000;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+.ticket_slide_text span{
+	font-size: 18px;
+	font-weight: lighter;
+/*	color: #fff;*/
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+    color: #000;
+	display: block;
+	margin-top: 10px;
+}
+.ticket_slide_text button{
+    box-sizing: border-box;
+    border-style: none;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3); 
+    width: 220px; 
+    height: 43px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.ticket_slide_text button:hover{
+    color: #fff;
+    background:rgba(0,0,0,0.3);
+    width: 260px; 
+    height: 43px;
+    padding-right: 30px;
+}
+.ticket_slide_text button:hover::after{
+    content:"GO";
+	text-align: center;
+	height: 43px;
+	height: 43px;
+    line-height: 43px;
+	position: absolute;
+	top: 95px;
+	left: 213px;
+	z-index: 50;
+	color:#fff;  
+	font-size: 20px;
+}
+/*푸터*/
+#eighth_page{
+    background: #2f4a65; 
+    background-size: cover;
+	position: relative;
+}
+.text_eighth{
+	position: absolute;
+	top: 22%;
+	left: 50%;
+	width:80%;
+	height: 200px;
+	margin-left: -40%;
+	display: inline-block;
+	color: #333;
+	text-align: center;
+}
+.foot_list{
+    height: 300px;
+}
+.foot_depth1{
+    width: 82%;
+}
+.foot_depth1 li{
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 7px;
+    height: 30px;
+    font-weight: 500;
+    
+}
+.foot_depth1 li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.foot_depth1 li a:hover{
+    color: #c5c5c5;
+    font-weight: 500;
+}
+.foot_depth2_wrap{
+    float: left;
+    width: 250px;
+    height: 70px;
+}
+.foot_depth2_wrap:nth-child(2){
+    margin: 0 10px;
+}
+.foot_depth2_wrap:nth-child(3){
+/*    margin-right: 10px;*/
+}
+.foot_depth2{
+    margin-left: 3px;
+    margin-top: 12px;
+    width: 240px;
+    height: 177px;
+    border-left: 1px solid #fff;
+}
+.visit_korea{
+    width: 15%;
+    float: right;
+}
+.visit_korea img{
+    width: 100%;
+}
+.footer address{
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    color: #fefefe;
+    font-weight:  lighter;
+    width: 100%;
+    height: 55px;
+}
+.copyright{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #fefefe;
+    font-weight:  lighter;
+}
+
