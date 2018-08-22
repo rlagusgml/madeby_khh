@@ -1,0 +1,906 @@
+@charset "utf-8";
+
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    color: #222;
+    font-family:KoreanGRS-R,KoreanGRSR;
+}
+/*layout*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.wrap{
+    width: 100%;
+}
+.header_intro{
+    height: 680px;
+    background: #ff4757;
+    position: relative;
+    border-bottom: 2px solid #fff;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30%;
+    margin-top: -13.5%;
+    width: 60%;
+    height: 27%;
+    font-family:KoreanGRS-R,KoreanGRSR;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 20px;
+    line-height: 60px;
+}
+
+#app{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 900px;
+    height: 100px;
+    margin-left: -450px;
+    font-family:KoreanGRS-R,KoreanGRSR;
+    font-size:80px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+
+.hedaer{
+    position: relative;
+    height: 720px;
+    background: #ff4757;
+}
+.logo{
+    text-indent: -9999px;
+    font-size: 0;
+}
+.main_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -600px;
+    margin-top: -340px;
+    width: 1200px;
+    height: 680px;
+    background: url(../images/main_1280.png) 0 0 no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background: contain;
+}
+/*네브시작*/
+.fix_nav{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background: #fbaf41;
+}
+.contents{
+    width: 100%;
+}
+.contents h2{
+    font-family:KoreanGRS-R,KoreanGRSR;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #fbaf41;
+    width: 100%;
+    height: 80px;
+    margin: 60px 0 30px;
+    line-height: 80px;
+    border-bottom:2px solid #fbaf41;
+}
+.con_1{
+    position: relative;
+    width: 100%;
+    height: 1700px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c5c5c5;
+    padding-bottom:  30px;
+}
+
+.web_popup_list.web_pop{
+    display: block;
+}
+/*웹팝업*/
+.web_popup_list{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 40;
+}
+.web_popup{
+    position: fixed;
+    top:30px;
+    left:50%;
+    margin-left: -45%;
+    width:90%;
+    height: 90%;
+    background: #fff;
+    z-index: 50;
+    border: 3px solid #ff4757;
+}
+.web_popup button{
+    box-sizing: border-box;
+    border-style: none;
+    background: #ff4757;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    line-height: 50px;
+    font-size: 25px;
+    letter-spacing: 4px;
+    padding-left: 30px;
+}
+.web_popup button .view{
+    font-size: 16px;
+    color: #fff;
+    margin-right: 30px;
+}
+.web_popup button .icon{
+    float: right;
+    text-align: center;
+}
+.blank_img_crom{
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    color: #fff;
+    margin-right:10px;
+    margin-top: 3px;
+}
+.blank_img_crom a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/crom_ico.png) 50% 50% no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+.blank_img_crom a:hover{
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background: url(../images/crom_ico.png) 50% 50% no-repeat;
+    background-size: 75%;
+    box-shadow:
+			0 0 0 2px rgba(255,255,255,0.3) inset,
+			0 0 0 40px rgba(255,255,255,0.3) inset;
+    
+}
+.blank_img_crom a:hover::after{
+    content: '새창으로 보기';
+    color: #666;
+    background: #fff;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -50px;
+    font-size: 13px;
+    line-height: 25px;
+    transition: 0.5s;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border: 0.3px solid #c5c5c5;
+    font-family: 'Nanum Square','Nanum Gothic',dotum,sans-serif;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+.close{
+    color: #fff;
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-right:5px;
+    margin-top: 3px;
+    border: 1px solid #fff;
+    position: relative;
+    transition: 0.5s;
+}
+.close:hover{
+    box-shadow:
+			0 0 0 2px rgba(255,255,255,0.3) inset,
+			0 0 0 40px rgba(255,255,255,0.3) inset;
+}
+.close:hover::after{
+    content: '닫기';
+    color: #666;
+    background: #fff;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -20px;
+    font-size: 13px;
+    line-height: 25px;
+    transition: 0.5s;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    border: 0.3px solid #c5c5c5;
+    font-family: 'Nanum Square','Nanum Gothic',dotum,sans-serif;
+    font-weight: bold;
+}
+.web_img_list{
+    margin:15px auto;
+    width: 98%;
+    height: 85%;
+    overflow:auto;
+    
+}
+.web_big{
+    width:99%;
+    margin: 0 auto;
+}
+
+
+/*//웹팝업*/
+
+
+
+.website{
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -550px;
+    width: 1100px;
+    height: 1583px;
+}
+.web_list{
+    width: 100%;
+    height: 40%;
+}
+.web_list_accordion{
+    width: 100%;
+    height: 40%;
+/*    display: none;*/
+}
+.web_box{
+    width: 31.3%;
+    height: 44%;
+    float: left;
+    margin-bottom: 7%;
+    cursor: pointer;
+    position: relative;
+}
+.web_box:nth-of-type(10),
+.web_box:nth-of-type(11),
+.web_box:nth-of-type(12){
+    margin-bottom: 0;
+}
+.web_box:nth-of-type(2),
+.web_box:nth-of-type(5),
+.web_box:nth-of-type(8),
+.web_box:nth-of-type(11){
+    margin: 0 3%;
+}
+.web_hover{
+    float: left;
+    width: 100%;
+    height: 60%;
+    margin:0 auto;
+    transition:all 0.9s, color 0.5s 0.5s; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.web_hover:hover{
+    box-shadow:
+			0 0 0 20px rgba(255,255,255,0.9) inset,
+			0 0 0 150px rgba(255,255,255,0.9) inset;
+}
+
+
+/*임시*/
+.web_hover_:hover{
+    box-shadow:
+			0 0 0 20px rgba(197,197,197,0.7) inset, 
+			0 0 0 150px rgba(255,255,255,0.9) inset;
+}
+.web_hover_:hover{
+    box-shadow:
+			0 0 0 20px rgba(0,0,0,0.4) inset, 
+			0 0 0 150px rgba(197,197,197,0.7) inset;
+}
+/*//임시*/
+
+
+.web_hover:hover::after{
+    content: 'Image viewe +';
+    color: #666;
+    text-align: center;
+    width: 140px;
+    height: 30px; 
+    position: absolute;
+    top: 68px;
+    left: 50%;
+    margin-left: -70px;
+    font-size: 18px;
+}
+.web_img{
+    width: 100%;
+    height: 60%;
+/*    border-top: 1px solid #666;*/
+/*    border-bottom: 1px solid #c5c5c5;*/
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+}
+.web_img_1{
+    background: url(../images/websiteimg/koreanair_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_2{
+    background: url(../images/websiteimg/peripera_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_3{
+    background: url(../images/websiteimg/chupa_chups_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_4{
+    background: url(../images/websiteimg/pentagram_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_5{
+    background: url(../images/websiteimg/musinsa_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_6{
+    background: url(../images/websiteimg/nine_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_7{
+    background: url(../images/websiteimg/thecolor_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_8{
+    background: url(../images/websiteimg/tstaition_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_9{
+    background: url(../images/websiteimg/seouldonhwa_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_10{
+    background: url(../images/websiteimg/agmall_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_11{
+    background: url(../images/websiteimg/maestro_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_img_12{
+    background: url(../images/websiteimg/hellocj_main.PNG) 50% 50% no-repeat;
+    background-size: cover;
+}
+.web_text{
+    width: 100%;
+    height: 25%;
+    margin:0 auto;
+}
+.web_text span{
+    float: left;
+    width: 100%;
+    height: 57%;
+    padding-top: 3%;
+    color: rgba(0,0,0,0.4);
+/*    color: #666;*/
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.web_text em{
+    float: left;
+    width: 100%;
+    height: 38%;
+    padding-bottom: 2%;
+    color: rgba(0,0,0,0.4);
+/*    color: #666;*/
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.web_box button{
+    border-style: none;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.8s;
+}
+.web_box button:hover{
+    background: #fff;
+    color: #666;
+}
+.web_box a{
+    display: block;
+    float: left;
+    color:rgba(0,0,0,0);
+    cursor: pointer;
+    text-align: center;
+    transition: 0.8s;
+    width: 100%;
+    height: 15%;
+    margin-right: 3%;
+}
+.go_site{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.go_site:hover{
+    color: #222;
+}
+.go_plan{
+    float: left;
+    width: 35%;
+    height: 15%;
+    display: none;
+}
+.web_box_7 a,
+.web_box_8 a,
+.web_box_9 a,
+.web_box_10 a,
+.web_box_11 a,
+.web_box_12 a{
+    color:rgba(0,0,0,0);
+    cursor: pointer;
+    text-align: center;
+    transition: 0.8s;
+    width: 100%;
+    height: 15%;
+}
+.go_site_2{
+    width: 100%;
+    height: 100%;
+}
+
+/*아코디언*/
+.web_list_accordion{}
+
+
+
+.more_web {
+    display: none;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+/*    display: block;*/
+    width: 100%;
+    height: 60px; 
+    border-style: none;
+    box-sizing: border-box;
+    background: #fbaf41;
+    color: #fff;
+    font-family:KoreanTIMS-R, KoreanTIMSR;
+    font-size: 30px;
+    cursor: pointer;
+    transition:all 0.9s, color 0.5s 0.5s; 
+}
+.more_web:hover{
+    box-shadow:0 150px 0 0 rgba(0,0,0,0.5) inset;
+}
+.con_2{
+    position: relative;
+    width: 100%;
+    height:725px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ff4757;
+    padding-bottom:  30px;
+}
+
+.event{
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -550px;
+    width: 1100px;
+    height: 725px;
+}
+.event_list{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+
+/*팝업 클릭시*/
+.event_popup_list.pop{
+    display: block;
+}
+/*팝업*/
+.event_popup_list{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 40;
+}
+.event_popup{
+    position: fixed;
+    top:30px;
+    left:50%;
+    margin-left: -45%;
+    width:90%;
+    height: 90%;
+    background: #fff;
+    z-index: 50;
+    border: 3px solid #fbaf41;
+}
+.event_popup button{
+    box-sizing: border-box;
+    border-style: none;
+    background: #fbaf41;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-align: left;
+    line-height: 50px;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+.event_popup button span{
+    color: #fff;
+    font-size: 25px;
+    margin:0 30px 0 30px;;
+}
+.event_popup button .icon{
+    float: right;
+    text-align: center;
+}
+.icon_event{
+    float: left;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-right:10px;
+/*    margin-right:5px;*/
+    margin-top: 3px;
+    border: 1px solid #fff;
+    position: relative;
+    transition: 0.5s;
+}
+.full{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transition: 0.5s;
+}
+.full:hover{
+    box-shadow:
+			0 0 0 2px rgba(255,255,255,0.3) inset,
+			0 0 0 40px rgba(255,255,255,0.3) inset;
+}
+.full:hover::after{
+    content: '새창으로 보기';
+    color: #666;
+    background: #fff;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -45px;
+    font-size: 13px;
+    line-height: 25px;
+    transition: 0.5s;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    border: 0.3px solid #c5c5c5;
+}
+.close{
+    color: #fff;
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-right:5px;
+    margin-top: 3px;
+    border: 1px solid #fff;
+    position: relative;
+    transition: 0.5s;
+}
+.close:hover::after{
+    content: '닫기';
+    color: #666;
+    background: #fff;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -20px;
+    font-size: 13px;
+    line-height: 25px;
+    transition: 0.5s;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    border: 0.3px solid #c5c5c5;
+}
+.img_list{
+    margin:15px auto;
+    width: 98%;
+    height: 85%;
+    overflow:auto;
+    
+}
+.small{
+    width: 15%;
+    float: left;
+}
+.big{
+    width:82%;
+    float: right;
+}
+
+
+
+/*팝업*/
+
+
+
+
+
+.event_popup__{
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    margin-left: -40%;
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    z-index: 9999999;
+    
+}
+
+
+
+.event_box{
+    width: 31.3%;
+    height: 43%;
+    background-color:#ff4757; 
+    float: left;
+    margin-bottom: 3%;
+    cursor: pointer;
+    opacity: 1;
+    position: relative;
+}
+.event_box:nth-of-type(4),
+.event_box:nth-of-type(5),
+.event_boxs:nth-of-type(6){
+    margin-bottom: 0;
+}
+.event_box_2,
+.event_box_5{
+    margin: 0 3%;
+}
+.event_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align:center; transition:all 0.8s, color 0.3s 0.3s; 
+}
+.event_text:hover{
+    box-shadow:
+			0 0 0 20px rgba(255,255,255,0.9) inset, 
+			0 0 0 150px rgba(255,255,255,0.9) inset;
+}
+
+/*임시*/
+.event_text_:hover{
+    box-shadow:
+			0 0 0 20px rgba(0,0,0,0.7) inset, 
+			0 0 0 150px rgba(0,0,0,0.7) inset;
+}
+/*//임시*/
+
+.event_text span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 170px;
+    font-size: 25px;
+    color: #666;
+    opacity: 0;
+    transition:all 0.8s;
+    letter-spacing: 3px;
+    position: relative;
+}
+.event_text span:hover{
+    opacity: 1;
+    transition:all 0.8s;
+}
+.event_text span:hover::before{
+    opacity: 1;
+    transition:all 0.8s;
+    font-size: 14px;
+    position: absolute;
+    top:34px;
+    left: 50%;
+    margin-left: -130px;
+    width: 260px;
+    height: 20px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.event_text span:hover::after{
+    content: '자세히 보기';
+    transition:all 0.8s;
+    font-size: 20px;
+    position: absolute;
+    top:76px;
+    left: 50%;
+    margin-left: -110px;
+    width: 220px;
+    height: 30px;
+    color: #c5c5c5;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+.event_text em:hover{
+    opacity: 1;
+}
+
+.event_img_1{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    background: url(../images/Chupa_Chups_event_vanner.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.event_text_1 span:hover::before{
+    content: '" 행운의 럭키박스를 찾아라! "';
+}
+.event_img_2{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    background: url(../images/this_month_city_vanner.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.event_text_2 span:hover::before{
+    content: '" 이달의 도시여행은 어디? "';
+}
+.event_img_3{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    background: url(../images/shine_city_vanner.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.event_text_3 span:hover::before{
+    content: '" 아름다운 빛의 도시 프랑스로 go! "';
+}
+
+.event_img_4{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    background: url(../images/mice_event_vanner.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.event_text_4 span:hover::before{
+    content: '" 수강신청시 채용의 기회가?! "';
+}
+
+.event_img_5{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    background: url(../images/mice_event_vanner_2.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.event_text_5 span:hover::before{
+    content: '" 수강신청시 채용의 기회가?! "';
+}
+
+.event_img_6{
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    background-size: cover;
+}
+.event_text_6 span:hover::before{
+    content: '" 공백 "';
+}
+
+
+.footer{
+    position: relative;
+    height: 1000px;
+    background: #ff4757;
+}
+.footer h2{
+    font-family:KoreanGRS-R,KoreanGRSR;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    margin: 30px 0;
+    padding-top: 15px;
+    line-height: 80px;
+    border-bottom:2px solid #fff;
+    text-align: center;
+}
+.myinfo{
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    margin-left: -40%;
+    width: 80%;
+    height: 800px;
+    background: url(../images/MY_info2_2.png) 0 0 no-repeat;
+    background-size: cover;
+}
+

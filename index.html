@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/comm.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/comm.js"></script>
+    <script src="js/comm_2.js"></script>
+    <script src="js/comm_3.js"></script>
+</head>
+<body>
+   <div class="wrap">
+       <div class="header_intro">
+           <div class="title">
+<!--               WELCOME TO<br>KIM HYEON HEE<br>PORTFOLIO-->
+           </div>
+           <div id="app"></div>
+           <script type="text/javascript">
+                'use strict';
+                var items = [
+                    '" WELCOME TO',
+                    'KIM HYEON HEE',
+                    'PORTFOLIO. "'
+                ];
+                var app = document.getElementById('app');
+                var count = 0;
+                var index = 0;
+                var typingEffect = function typingEffect() {
+                    var text = items[index];
+                    if (count < text.length) {
+                        setTimeout(function () {
+                            app.innerHTML += text[count];
+                            count++;
+                            typingEffect();
+                        }, Math.floor(Math.random(30) * 300));
+                    } else {
+                        count = 0;
+                        index = index + 1 < items.length ? index + 1 : 0;
+                        setTimeout(function () {
+                            app.innerHTML = '';
+                            typingEffect();
+                        }, 2000);  //텍스트 체인지 시간
+                    }
+                };
+                typingEffect();
+            </script>
+       </div>
+       
+       <div class="hedaer">
+           <div class="logo"><a href="#"><h1>포트폴리오</h1></a></div>
+           <div class="main_img">
+           </div>
+           <div class="fix_nav"></div>
+       </div>
+       <div class="contents">
+           <div class="con con_1">
+               <div class="website">
+                   <h2>WEBSITE</h2>
+
+                       <div class="web_popup_list web_popup_list_1">
+                           <div class="web_popup web_popup_1">
+                               <button>
+                                   <span class="view">BIG VIEW</span>대한항공 : KOREANAIR
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/koreanair/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/koreanair_main_full.png" alt="대한항공 : KOREANAIR">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_2">
+                           <div class="web_popup web_popup_2">
+                               <button>
+                                   <span class="view">BIG VIEW</span>페리페라 : PERIPERA
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/peripera/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/peripera_main_full.png" alt="페리페라 : PERIPERA">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_3">
+                           <div class="web_popup web_popup_3">
+                               <button>
+                                   <span class="view">BIG VIEW</span>츄파춥스 : CHUPA CHUPS
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/chupachups/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/chupa_chups_main_full.png" alt="츄파춥스 : CHUPA CHUPS">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_4">
+                           <div class="web_popup web_popup_4">
+                               <button>
+                                   <span class="view">BIG VIEW</span>펜타그램 : PENTAGRAM
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/pentagram/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/pentagram_main_full.png" alt="펜타그램 : PENTAGRAM">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_5">
+                           <div class="web_popup web_popup_5">
+                               <button>
+                                   <span class="view">BIG VIEW</span>무신사 스토어 : MUSINSA
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/musinsa/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/musinsa_main.PNG" alt="무신사 스토어 : MUSINSA">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_6">
+                           <div class="web_popup web_popup_6">
+                               <button>
+                                   <span class="view">BIG VIEW</span>나인 : NINE
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/nine/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/nine_main.PNG" alt="나인 : NINE">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_7">
+                           <div class="web_popup web_popup_7">
+                               <button>
+                                   <span class="view">BIG VIEW</span>더 컬러 : THE COLOR
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/thecolor/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/thecolor_main.PNG" alt="더 컬러 : THE COLOR">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_8">
+                           <div class="web_popup web_popup_8">
+                               <button>
+                                   <span class="view">BIG VIEW</span>티 스테이션 : T STAITION
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/tstaition/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/tstaition_main_full.png" alt="티 스테이션 : T STAITION">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_9">
+                           <div class="web_popup web_popup_9">
+                               <button>
+                                   <span class="view">BIG VIEW</span>서울 돈화문 국악당 : SEOUL DONHWA GATE
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/seouldonhwagate/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/seouldonhwa_main_full.png" alt="서울 돈화문 국악당 : SEOUL DONHWA GATE">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_10">
+                           <div class="web_popup web_popup_10">
+                               <button>
+                                   <span class="view">BIG VIEW</span>안국건강 : AG MALL
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/agmall/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/agmall_main_full.png" alt="안국건강 : AG MALL">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="web_popup_list web_popup_list_11">
+                           <div class="web_popup web_popup_11">
+                               <button>
+                                   <span class="view">BIG VIEW</span>마에스트로 : MAESTRO
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/maestro/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/maestro_main_full.png" alt="마에스트로 : MAESTRO">
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="web_popup_list web_popup_list_12">
+                           <div class="web_popup web_popup_12">
+                               <button>
+                                   <span class="view">BIG VIEW</span>CJ 헬로 : HELLO CJ
+                                   <div class="icon">
+                                       <span class="blank_img_crom"><a href="website_list/hellocj/index.html" target="_blank"></a></span>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="web_img_list">
+                                   <img class="web_big" src="images/websiteimg/hellocj_main_full.png" alt="CJ 헬로 : HELLO CJ">
+                               </div>
+                           </div>
+                       </div>
+                 
+                   <div class="web_list">
+                       <div class="web_box web_box_1">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_1"></div>
+                           <div class="web_text">
+                               <span>대한항공 : KOREANAIR</span>
+                               <em>" 여행은 인생이다. "</em>
+                           </div>
+                           <a href="website_list/koreanair/index.html" target="_blank" style="display: block;"><button class="go_site">사이트 바로가기</button></a>
+                           <button class="go_plan">기획서</button>
+                       </div>
+                       <div class="web_box web_box_2">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_2"></div>
+                           <div class="web_text">
+                               <span>페리페라 : PERIPERA</span>
+                               <em>" 달달공장 컬렉션 "</em>
+                           </div>
+                           <a href="website_list/peripera/index.html" target="_blank" style="display: block;"><button class="go_site">사이트 바로가기</button></a>
+                           <button class="go_plan">기획서</button>
+                       </div>
+                       <div class="web_box web_box_3">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_3"></div>
+                           <div class="web_text">
+                               <span>츄파춥스 : CHUPA CHUPS</span>
+                               <em>" life less sesrious! "</em>
+                           </div>
+                           <a href="website_list/chupachups/index.html" target="_blank" style="display: block;"><button class="go_site">사이트 바로가기</button></a>
+                           <button class="go_plan">기획서</button>
+                       </div>
+                       <div class="web_box web_box_4">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_4"></div>
+                           <div class="web_text">
+                               <span>펜타그램 : PENTAGRAM</span>
+                               <em>" design collection "</em>
+                           </div>
+                           <a href="website_list/pentagram/index.html" target="_blank" style="display: block;"><button class="go_site">사이트 바로가기</button></a>
+                           <button class="go_plan">기획서</button>
+                       </div>
+                       <div class="web_box web_box_5">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_5"></div>
+                           <div class="web_text">
+                               <span>무신사 스토어 : MUSINSA</span>
+                               <em>" 패션 편집샵 "</em>
+                           </div>
+                           <a href="website_list/musinsa/index.html" target="_blank" style="display: block;"><button class="go_site">사이트 바로가기</button></a>
+                           <button class="go_plan">기획서</button>
+                       </div>
+                       <div class="web_box web_box_6">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_6"></div>
+                           <div class="web_text">
+                               <span>나인 : NINE</span>
+                               <em>" imaginary site design "</em>
+                           </div>
+                           <a href="website_list/nine/index.html" target="_blank" style="display: block;"><button class="go_site">사이트 바로가기</button></a>
+                           <button class="go_plan">기획서</button>
+                       </div>
+                   </div>
+                   <div class="web_list_accordion">
+                       <div class="web_box web_box_7">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_7"></div>
+                           <div class="web_text">
+                               <span>더 컬러 : THE COLOR</span>
+                               <em>" imaginary site design2 "</em>
+                           </div>
+                           <a href="website_list/thecolor/index.html" target="_blank" style="display: block;"><button class="go_site_2">사이트 바로가기</button></a>
+                       </div>
+                       <div class="web_box web_box_8">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_8"></div>
+                           <div class="web_text">
+                               <span>티 스테이션 : T STAITION</span>
+                               <em>" 타이어는 티 스테이션 "</em>
+                           </div>
+                           <a href="website_list/tstaition/index.html" target="_blank" style="display: block;"><button class="go_site_2">사이트 바로가기</button></a>
+                       </div>
+                       <div class="web_box web_box_9">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_9"></div>
+                           <div class="web_text">
+                               <span>서울 돈화문 국악당</span>
+                               <em>" 가장 멋진 국악을 만나는 곳 "</em>
+                           </div>
+                           <a href="website_list/seouldonhwagate/index.html" target="_blank" style="display: block;"><button class="go_site_2">사이트 바로가기</button></a>
+                       </div>
+                       <div class="web_box web_box_10">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_10"></div>
+                           <div class="web_text">
+                               <span>안국건강 : AG MALL</span>
+                               <em>" 눈 건강은 안국건강 "</em>
+                           </div>
+                           <a href="website_list/agmall/index.html" target="_blank" style="display: block;"><button class="go_site_2">사이트 바로가기</button></a>
+                       </div>
+                       <div class="web_box web_box_11">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_11"></div>
+                           <div class="web_text">
+                               <span>마에스트로 : MAESTRO</span>
+                               <em>" 남성을 위한 정장 "</em>
+                           </div>
+                           <a href="website_list/maestro/index.html" target="_blank" style="display: block;"><button class="go_site_2">사이트 바로가기</button></a>
+                       </div>
+                       <div class="web_box web_box_12">
+                           <div class="web_hover"></div>
+                           <div class="web_img web_img_12"></div>
+                           <div class="web_text">
+                               <span>CJ 헬로 : HELLO CJ</span>
+                               <em>" 방송 통신 서비스 "</em>
+                           </div>
+                           <a href="website_list/hellocj/index.html" target="_blank" style="display: block;"><button class="go_site_2">사이트 바로가기</button></a>
+                       </div>
+                   </div>
+                   <button class="more_web">더보기</button>
+               </div>
+           </div>
+           
+           <div class="con con_2">
+               <div class="event">
+               <h2>EVENT</h2>
+                   <div class="event_list">
+                       <div class="event_popup_list event_popup_list_1">
+                           <div class="event_popup popup_1">
+                               <button>
+                                  <span>BIG VIEW</span>츄파춥스 : 행운의 럭키박스를 찾아라!
+                                   <div class="icon">
+                                       <a class="icon_event" href="event_fullpage/1 chupa_chups/index_1.html" target="_blank">
+                                           <i class="material-icons full">fullscreen</i>
+                                        </a>
+                                        <i class="material-icons close">close</i>
+                                    </div>
+                                </button>
+                               <div class="img_list">
+                                   <img class="small" src="images/event_list/event1_chupachups.png" alt="츄파춥스 : 행운의 럭키박스를 찾아라!">
+                                   <img class="big" src="images/event_list/event1_chupachups.png" alt="츄파춥스 : 행운의 럭키박스를 찾아라!">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="event_popup_list event_popup_list_2">
+                           <div class="event_popup popup_2">
+                               <button>
+                                  <span>BIG VIEW</span>프랑스 여행 : 이달의 도시여행은 어디?
+                                   <div class="icon">
+                                      <a class="icon_event" href="event_fullpage/2 french_travle1/index_2.html" target="_blank">
+                                           <i class="material-icons full">fullscreen</i>
+                                       </a>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="img_list">
+                                   <img class="small" src="images/event_list/event2_this_month_city.png" alt="프랑스 여행 : 이달의 도시여행은 어디?">
+                                   <img class="big" src="images/event_list/event2_this_month_city.png" alt="프랑스 여행 : 이달의 도시여행은 어디?">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="event_popup_list event_popup_list_3">
+                           <div class="event_popup popup_3">
+                               <button>
+                                   <span>BIG VIEW</span>프랑스 여행2 : 아름다운 빛의 도시 프랑스로 go!
+                                   <div class="icon">
+                                       <a class="icon_event" href="event_fullpage/3 french_travle2/index_3.html" target="_blank">
+                                           <i class="material-icons full">fullscreen</i>
+                                        </a>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="img_list">
+                                   <img class="small" src="images/event_list/event3_shine_city.png" alt="프랑스 여행2 : 아름다운 빛의 도시 프랑스로 go!">
+                                   <img class="big" src="images/event_list/event3_shine_city.png" alt="프랑스 여행2 : 아름다운 빛의 도시 프랑스로 go!">
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="event_popup_list event_popup_list_4">
+                           <div class="event_popup popup_4">
+                               <button>
+                                   <span>BIG VIEW</span>MICE 한국연수원 : 수강신청시 채용의 기회
+                                   <div class="icon">
+                                       <a class="icon_event" href="event_fullpage/4 mice1/index_4.html" target="_blank">
+                                           <i class="material-icons full">fullscreen</i>
+                                        </a>
+                                       <i class="material-icons close">close</i>
+                                    </div>
+                               </button>
+                               <div class="img_list">
+                                   <img class="small" src="images/event_list/event4_mice_1.png" alt="MICE 한국연수원 : 수강신청시 채용의 기회">
+                                   <img class="big" src="images/event_list/event4_mice_1.png" alt="MICE 한국연수원 : 수강신청시 채용의 기회">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="event_popup_list event_popup_list_5">
+                           <div class="event_popup popup_5">
+                               <button>
+                                   <span>BIG VIEW</span>MICE 한국연수원2 : 수강신청시 채용의 기회2
+                                   <div class="icon">
+                                       <a class="icon_event" href="event_fullpage/5 mice2/index_5.html" target="_blank">
+                                           <i class="material-icons full">fullscreen</i>
+                                        </a>
+                                       <i class="material-icons close">close</i>
+                                   </div>
+                               </button>
+                               <div class="img_list">
+                                   <img class="small" src="images/event_list/event5_mice_2big.png" alt="MICE 한국연수원2 : 수강신청시 채용의 기회2">
+                                   <img class="big" src="images/event_list/event5_mice_2big.png" alt="MICE 한국연수원2 : 수강신청시 채용의 기회2">
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="event_popup_list event_popup_list_6">
+                           <div class="event_popup popup_6">
+                               <button>
+                                   <span></span>
+                                   <div class="icon">
+                                       <a class="icon_event" href="event_fullpage/6 peripera/index_6.html" target="_blank">
+                                           <i class="material-icons full">fullscreen</i>
+                                        </a>
+                                       <i class="material-icons close">close</i>
+                                    </div>
+                                </button>
+                                <div class="img_list">
+                               </div>
+                           </div>
+                       </div>
+                       
+                       
+                       <div class="event_box event_box_1">
+                           <div class="event_img event_img_1"></div>
+                           <div class="event_text event_text_1">
+                               <span>츄파춥스</span>
+                           </div>
+                       </div>
+                       <div class="event_box event_box_2">
+                           <div class="event_img event_img_2"></div>
+                           <div class="event_text event_text_2">
+                               <span>프랑스 여행</span>
+                           </div>
+                       </div>
+                       <div class="event_box event_box_3">
+                           <div class="event_img event_img_3"></div>
+                           <div class="event_text event_text_3">
+                               <span>프랑스 여행2</span>
+                           </div>
+                       </div>
+                       <div class="event_box event_box_4">
+                           <div class="event_img event_img_4"></div>
+                           <div class="event_text event_text_4">
+                               <span>MICE 한국연수원</span>
+                           </div>
+                       </div>
+                       <div class="event_box event_box_5">
+                           <div class="event_img event_img_5"></div>
+                           <div class="event_text event_text_5">
+                               <span>MICE 한국연수원2</span>
+                           </div>
+                       </div>
+                       <div class="event_box event_box_6">
+                           <div class="event_img event_img_6"></div>
+                           <div class="event_text event_text_6">
+                           </div>
+                       </div>
+                   </div>
+                   
+               </div>
+           </div>
+           
+       </div>
+       <div class="footer">
+           <h2>MY INFOGRAPHY</h2>
+           <div class="myinfo">
+               
+           </div>
+       </div>
+   </div>
+    
+</body>
+</html>
