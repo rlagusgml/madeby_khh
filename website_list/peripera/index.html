@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+ <title>Peripera</title>
+ <!-- 아래에 script 3.3.1.min.js 와 fullpage.js / link full_page.css는 무조건 작성이 되어아햡니다 -->
+ <link rel="icon" href="imgs/logo_ico.png">
+ <script src="../../js/jquery-3.3.1.min.js"></script>
+ <script src="../../js/jquery.fullPage.js"></script>
+ <script src="js/comm.js"></script>
+ <link rel="stylesheet" href="../../css/jquery.fullPage.css">
+ <link rel="stylesheet" href="css/swiper.min.css">
+ <link rel="stylesheet" href="../../css/animations.css" type="text/css">
+ <link rel="stylesheet" href="css/comm.css">
+ 
+ 
+ <!-- 아래는 구글 웹폰트에 대한 링크입니다 없어도 되고 있어도 됩니다. -->
+ <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Josefin+Sans|Raleway" rel="stylesheet">
+
+</head>
+<body>
+  <div id="wrapper"><!--id의 이름(wrapper)는 절대로 수정하면 안됩니다. -->
+  <!--마찬가지로 아래에 section <div>는 class의 이름을 절대로 수정하면 안됩니다. 하지만 id의 이름은 마음대로 지정해서 css를 바꾸어 줄 수 있습니다 -->
+
+    <!-- !!wrapper<div>안에 setcion<div>가 5개가 있으면 페이지가 5개가 자동으로 생성되고 setcion이 3개가 있으면 3개의 페이지가 자동으로 생성됩니다.!! 섹션안에 꾸미면서 제작을 하면 됩니다. -->
+    <div class="section" id="first_page">
+      <div class="contents_first">
+          <div class="header">
+            <div class="link_mini">
+              <div class="link_mini_lft">
+                <ul>
+                  <li><a href="#">KOR</a></li><span>|</span>
+                  <li><a href="#">채용정보</a></li><span>|</span>
+                  <li><a href="#">매장안내</a></li>
+                </ul>
+              </div>
+              <div class="link_mini_rit">
+                <ul>
+                  <li><a href="#">로그인</a></li><span>|</span>
+                  <li><a href="#">회원가입</a></li><span>|</span>
+                  <li><a href="#">주문/배송조회</a></li><span>|</span>
+                  <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="logo">
+              <h1>
+                <a href="#">peripera</a>
+              </h1>
+            </div>
+          </div>
+    </div>
+    <!-- //헤더 -->
+
+
+
+        <!-- 메뉴줄-->
+    <div class="gnb">
+          <!-- 왼쪽메뉴 -->
+        <div class="gnb_list">
+          <ul class="menu_depth1">
+            <li>
+              <a href="#">브랜드</a>
+              <ul class="menu_depth2">
+                <li><a href="#">페리페라이야기</a></li>
+                <li><a href="#">매장소개 </a></li>
+                <li><a href="#">(주)클리오 회사소개</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">제품</a>
+              <ul class="menu_depth2">
+                <li><a href="#">NEW신제품</a></li>
+                <li><a href="#">BEST인기템</a></li>
+                <li><a href="#">유형별</a></li>
+                <li><a href="#">라인별</a></li>
+                <li><a href="#">리미티드에디션</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">미디어</a>
+              <ul class="menu_depth2">
+                <li><a href="#">영상</a></li>
+                <li><a href="#">잡지</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">뷰티팁</a>
+              <ul class="menu_depth2">
+                <li><a href="#">모델 룩</a></li>
+                <li><a href="#">트렌트페리크업</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="menu_depth2">
+                <li><a href="#">페리뉴스</a></li>
+                <li><a href="#">포토리뷰</a></li>
+                <li><a href="#">서포터즈</a></li>
+                <li><a href="#">SNS</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이벤트</a>
+              <ul class="menu_depth2">
+                <li><a href="#">진행중 이벤트</a></li>
+                <li><a href="#">당첨자발표</a></li>
+                <li><a href="#">출첵!내일 또 와요</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- //왼쪽메뉴 -->
+
+
+         <!-- 검색바 -->
+        <div class="global_search">
+          <div class="search-container">
+              <input type="text" id="main_Srch" class="input_search glb_input" placeholder="슈가 글로우 틴트" onclick="fnOnclickActionTrack('o','Header_검색');integratedSearch();" onkeydown="keyDownHeaderSrchTxt();">
+              <a href="#" class="clearBtn" style="display: none;">
+                <img src="imgs/ico_search_999.png" alt="검색어 삭제">
+              </a>
+              <input type="hidden" id="searchStringStr" value="슈가 글로우 틴트">
+              <button type="button" id="searchAll" title="전체검색" class="btn"><img src="imgs/ico_search_999.png" alt="전체검색"></button>
+              <input type="hidden" name="colorCd">
+           </div>
+           <div id="cartGroup" class="cartGroup">
+              <!-- 장바구니 비어있을시 on클래스 빠짐 -->
+              <a href="http://www.etudehouse.com/kr/ko/cartList.do?method=list" onclick="fnOnclickActionTrack('o','Header_장바구니보기');">
+                  <img src="imgs/cart_2_999.png" alt="cart_1_999">
+<!--                  <span class="hdTxt" >장바구니</span>-->
+              </a> 
+            <!--     <span class="count">0</span> -->
+            </div>
+        </div>
+
+
+
+
+        <!-- search를 form으로 쏘기위해 수정  -->
+        <form name="headSearchFrm" id="headSearchFrm" action="http://www.etudehouse.com/kr/ko/search.do" method="get">
+          <input type="hidden" name="method" id="searchFrmMethod" value="">
+          <input type="hidden" name="srchVal" id="searchFrmSrcVal" value="">
+          <input type="hidden" name="colorCd" id="searchFrmColorCd" value="">
+          
+        </form>
+
+
+        <script type="text/javascript">
+        
+          drawSearchedKwd();
+          var momvSrch = "";
+          $("#searchAll").click(function(){
+            doInputSearchHeader();
+          });
+          function keyDownHeaderSrchTxt() {
+            if(event.keyCode == 13) {
+              doInputSearchHeader();
+            }
+          }
+
+
+          
+          function doInputSearchHeader() {
+            var srchVal = "";
+            if($("#main_Srch").val()=="" && $("#searchStringStr").val() == ""){
+              alert("검색어를 입력하세요.");
+              return;
+            }else if($("#main_Srch").val()=="" && $("#searchStringStr").val() != ""){
+              srchVal = $("#searchStringStr").val();
+            }else{
+              srchVal = $("#main_Srch").val();
+            }
+            callKwdCookie(srchVal);
+            //var encodeSrchVal = encodeURI(srchVal);
+            window._rblq = window._rblq || [];
+              _rblq.push(['setVar','cuid','f68185a1-9e5a-40ed-9f08-e7be2c966f4b']);
+              _rblq.push(['setVar','device', head_device]);
+              _rblq.push(['setVar','userId','']); // optional
+              _rblq.push(['setVar','searchTerm',srchVal]);
+              _rblq.push(['track','search']);
+              (function(s,x){s=document.createElement('script');s.type='text/javascript';
+              s.async=true;s.defer=true;s.src=(('https:'==document.location.protocol)?'https':'http')+
+              '://assets.recobell.io/rblc/js/rblc-apne1.min.js';
+              x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();
+               
+             if($("input[name=colorCd]").val() != ""){
+               //location.href="http://www.etudehouse.com/kr/ko"+"/search.do?method=all_List&srchVal="+srchVal+"&colorCd="+$("input[name=colorCd]").val();
+               $('#searchFrmMethod').val("all_List");
+               $('#searchFrmSrcVal').val(srchVal);
+               $('#searchFrmColorCd').val($("input[name=colorCd]").val());
+               $('#headSearchFrm').submit();
+               
+             } else {
+               //location.href="http://www.etudehouse.com/kr/ko"+"/search.do?method=all_List&srchVal="+srchVal;
+               $('#searchFrmMethod').val("all_List");
+               $('#searchFrmSrcVal').val(srchVal);
+               $('#headSearchFrm').submit();
+               
+             }
+            //+"&encodeSrchVal="+encodeSrchVal
+          }
+
+        </script>
+        <!-- //검색바 -->
+    </div>
+        <!-- //메뉴줄-->
+
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="imgs/slideimg_1.png" alt="slide1">
+        </div>
+        <div class="swiper-slide">
+          <img src="imgs/slideimg_2.png" alt="slide2">
+        </div>
+        <div class="swiper-slide">
+          <img src="imgs/slideimg_3.png" alt="slide3">
+        </div>
+        <div class="swiper-slide">
+          <img src="imgs/slideimg_4.png" alt="slide3">
+        </div> 
+        <div class="swiper-slide">
+          <img src="imgs/slideimg_5.png" alt="slide3">
+        </div> 
+        <div class="swiper-slide">
+          <img src="imgs/slideimg_6.png" alt="slide3">
+        </div>      
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <!-- <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+      <script>
+         var swiper = new Swiper('.swiper-container', {
+           spaceBetween: 30,
+           centeredSlides: true,
+           autoplay: {
+             delay: 3000,
+             disableOnInteraction:false,
+             
+            },    
+           pagination: {
+             el: '.swiper-pagination',        
+             type: 'fraction',
+             clickable: true,
+           },
+           navigation: {
+             nextEl: '.swiper-button-next',
+             prevEl: '.swiper-button-prev',
+            },
+         });
+      </script>
+    </div>
+    
+    
+    <div class="section" id="second_page">
+        <div class="contents_second">
+            <h2>NEW PRODUCT</h2>
+            <div class="newproduct">
+                <ul>          
+                  <li>
+                    <a href="#"><img src="imgs/슈가글로우틴트.png"  alt="슈가글로우틴트"></a>
+                    <dl>
+                      <dt>슈가글로우 틴트</dt>
+                      <dd>9.000원</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <a href="#"><img src="imgs/잉크더에어리벨벳.png"  alt="잉크 더 에어리 벨벳"></a>
+                    <dl>
+                      <dt>잉크 더 에어리 벨벳</dt>
+                      <dd>8.000원</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <a href="#"><img src="imgs/잉크뽀얀스킨틴트.png" alt="잉크뽀얀 스킨 틴트"></a>
+                    <dl>
+                      <dt>잉크뽀얀 스킨 틴트</dt>
+                      <dd>10.000원</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <a href="#"><img src="imgs/컬러핏틴트워터젤.png" alt="컬러핏 틴트 워터 젤"></a>
+                    <dl>
+                      <dt>컬러핏 틴트 워터 젤</dt>
+                      <dd>8.000원</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <a href="#"><img src="imgs/맑은수채화벨벳치크.png" alt="맑은 수채화 벨벳 치크"></a>
+                    <dl>
+                      <dt>맑은 수채화 벨벳 치크</dt>
+                      <dd>8.000원</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <a href="#"><img src="imgs/에어리잉크쿠션.png" alt="에어리 잉크 쿠션"></a>
+                    <dl>
+                      <dt>에어리 잉크 쿠션</dt>
+                      <dd>14.000원</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <a href="#"><img src="imgs/잉크피팅아이프라이머.png" alt="잉크피팅 아이 프라이머"></a>
+                    <dl>
+                      <dt>잉크피팅 아이 프라이머</dt>
+                      <dd>8.000원</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <a href="#"><img src="imgs/잉크브로우타투젤.png" alt="잉크브로우 타투 젤"></a>
+                    <dl>
+                      <dt>잉크브로우 타투 젤</dt>
+                      <dd>7.000원</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <a href="#"><img src="imgs/슈가트윙클리퀴드섀도우.png" alt="슈가 트윙클 리퀴드 섀도우"></a>
+                    <dl>
+                      <dt>슈가 트윙클 리퀴드 섀도우</dt>
+                      <dd>9.000원</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <a href="#"><img src="imgs/에어리잉크파운데이션.png" alt="에어리 잉크 파운데이션"></a>
+                    <dl>
+                      <dt>에어리 잉크 파운데이션</dt>
+                      <dd>14.000원</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    
+    <div class="section" id="third_page">
+        <div class="contents_third">
+            <h2>EVENT</h2>
+            <div class="mainproduct">
+                <div class="mainproduct_list_wrap">
+                    <ul class="mainproduct_list">
+                        <li><a href="#"><img src="imgs/mainproduct_1.png" alt="과즙뿜뿜 말캉틴트 페리페라 잉크 더 젤라또"></a></li>
+                        <li><a href="#"><img src="imgs/mainproduct_2.png" alt="반톤올림 뽀얀 베이비 페이스 비법은 스킨틴트"></a></li>
+                        <li><a href="#"><img src="imgs/mainproduct_3.png" alt="달콤한척 앙큼틴트 페리페라 슈가 글로우 틴트"></a></li>
+                        <li><a href="#"><img src="imgs/mainproduct_4.png" alt="달콤한척 앙큼틴트 페리페라 슈가 글로우 틴트"></a></li>
+                    </ul>
+                </div>
+                <button>지금 GET 하러 가기!</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section" id="fourth_page">
+        <div class="contents_fourth">
+            <div class="evnet_collage">
+                <div class="col col1">
+                    <a href="#"><img src="imgs/col_1.png" alt="홀리데이 한정판_1 페이스북"></a>
+                </div>
+                <div class="col col2">
+                    <a href="#"><img src="imgs/col_2.png" alt="홀리데이 한정판_2"></a>
+                </div>
+                <div class="col col3">
+                    <a href="#"><img src="imgs/col_3.png" alt="홀리데이 한정판_3"></a>
+                </div>
+                <div class="col col4">
+                    <a href="#"><img src="imgs/col_4.png" alt="잉크 뽀얀 틴트"></a>
+                </div>
+                <div class="col col5">
+                    <a href="#"><img src="imgs/col_5.png" alt="잉크 뽀얀 틴트 후기"></a>
+                </div>
+                <div class="col col6">
+                    <a href="#"><img src="imgs/col_6.png" alt="홀리데이 한정판_1"></a>
+                </div>
+                <div class="col col7">
+                    <a href="#"><img src="imgs/col_7.png" alt="틴트 후기"></a>
+                </div>
+                <div class="col col8">
+                    <a href="#"><img src="imgs/col_8.png" alt="잉크 더 에어리 벨벳 페이스북"></a>
+                </div>
+                <div class="col col9">
+                    <a href="#"><img src="imgs/col_9.png" alt="잉크 피팅 쉐도우 후기"></a>
+                </div>
+                <div class="col col10">
+                    <a href="#"><img src="imgs/col_10.png" alt="뷰티 체험단 모집 _베스트 리뷰왕을 찾아라!"></a>
+                </div>
+                <div class="col col11">
+                    <a href="#"><img src="imgs/col11_click_banner.png" alt="더 많은 후기 보러가기"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="fifth_page">
+        <div class="contents_fifth">
+            <div class="footer">
+                <div class="goto">
+                    <h2>바로가기</h2>
+                    <ul class="goto_list">
+                        <li><span class="ico ico_1"></span><em>멤버십</em></li>
+                        <li><span class="ico ico_2"></span><em>매장안내</em></li>
+                        <li><span class="ico ico_3"></span><em>쿠폰존</em></li>
+                        <li><span class="ico ico_4"></span><em>고객센터</em></li>
+                        <li><span class="ico ico_5"></span><em>친구소개</em></li>
+                        <li><span class="ico ico_6"></span><em>SNS</em></li>
+                    </ul>
+                </div>
+                <div class="foot_list">
+                    <div class="menu_foot_1">
+                        패밀리 사이트 이동 :
+                        <a href="#">클럽 클리오</a><span>|</span>
+                        <a href="#">구달</a>
+                    </div>
+                    <div class="menu_foot_2">
+                        <a href="#">이용약관</a><span>|</span>
+                        <a href="#">채용정보</a><span>|</span>
+                        <a href="#">개인정보처리방침</a><span>|</span>
+                        <a href="#">운영정책</a><span>|</span>
+                        <a href="#">공지사항</a>
+                    </div>
+                </div>
+                <address>고객상담실 080-080-1510<br>서울시 강남구 압구정로 30길 62 (주)클리오 / 대표이사 : 한현옥</address>
+                <div class="copyright">COPYRIGHTS(C) 2016 CLUBCLIO.CO.LTD. ALL RIGHTS RESERVED.</div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+  <!-- 스트립트의 기본설정입니다 보통 body안 끝에 넣어주면 됩니다. -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+     $('#wrapper').fullpage({
+               // 네비게이션의 설정입니다.
+               menu: '#menu',
+               lockAnchors: true,
+               verticalCentered: false,
+           // sectionsColor=각 섹션별 색상을 지정해 줍니다 ex) ['#fff, #red, #blue, ...']
+           sectionsColor: [''],
+           navigation: true,
+           // 오른쪽 네비게이션바의 위치를 설정해 줍니다
+           navigationPosition: 'right',
+           // 네이게이션에 이름을 설정합니다.
+           // 오른쪽 네비게이션에 각섹션별 이름을 확인시켜줍니다.
+           navigationTooltips: [],
+           showActiveTooltip: 'true',
+           slidesNavigation: 'true',
+           slidesNavPosition: 'bottom',
+           // 마지막 페이지에서 다시 되돌아갑니다.
+           loopBottom: true,
+         });
+
+   });
+ </script>
+ <script src="js/css3-animate-it.js"></script>
+</body>
+</html>
