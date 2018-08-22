@@ -877,7 +877,7 @@
 
 .footer{
     position: relative;
-    height: 1000px;
+    height: 1100px;
     background: #ff4757;
 }
 .footer h2{
@@ -899,7 +899,7 @@
     left: 50%;
     margin-left: -40%;
     width: 80%;
-    height: 800px;
+    height:900px;
     background: url(../images/MY_info2_2.png) 0 0 no-repeat;
     background-size: cover;
 }
