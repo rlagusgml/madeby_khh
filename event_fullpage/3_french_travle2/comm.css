@@ -1,0 +1,393 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;;font-family:'Noto Sans','맑은고딕', 'Malgun Gothic','돋움',dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*layout*/
+.wrap{
+    width: 1100px;
+    margin: 0 auto;
+}
+.header{
+	width: 100%;
+    height: 200px;
+}
+.top_mini{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	background: #2f4a65;
+}
+.le_top li,.ri_top li{
+	float: left;
+	font-size: 12px;
+	color: #fefefe;
+	margin-top: 2px;
+}
+.le_top li a,.ri_top li a{
+	color: #fefefe;
+}
+.le_top li a:hover,.ri_top li a:hover{
+    color: #c5c5c5;
+}
+.le_top li span,.ri_top li span{
+	padding: 0 10px;
+}
+.le_top{
+	float: left;
+	margin-left:30px;
+	margin-top: 5px;
+}
+.ri_top{
+	float: right;
+	margin-right:30px;
+	margin-top: 5px;
+}
+.logo{
+	margin-top:80px;
+	float: left;
+	text-indent: -9999px;
+	background: url(images/header_logo.jpg) 0 0 no-repeat;
+	background-size: 100%;
+	width: 20%;
+	height: 45px;
+}
+.gnb{
+	height: 150px;
+}
+.wrap_menubar{
+    width: 70%;
+    height: 50px;
+	float: right;
+	margin-top:90px;
+	padding-bottom: 10px;
+	/*height: 40px;*/
+}
+.menu_depth1{
+	float: left;
+/*    margin-left: 40px*/
+}
+.menu_depth1 li{
+    position: relative;
+	float: left;
+     width:150px;
+    height: 50px;
+    text-align: center;
+}
+.menu_depth1 li a{
+	font-family: 'Hind Siliguri', sans-serif;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: -1;
+    transition: 0.3s;
+}
+.menu_depth1 li a:hover{
+    color: #2f4a65;
+}
+.menu_depth2{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    height: 220px;
+    background: #fff;
+/*    background: rgba(250,250,250,0.5);*/
+/*    border: 1px solid #c5c5c5;*/
+    z-index: 60;
+    display: none;
+}
+.menu_depth2 li{
+    width:180px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+.menu_depth2 li a{
+    display: block;
+    font-size: 14px;
+    font-weight: 530;
+    color: #666;
+    width:180px;
+    height: 30px;
+    line-height: 30px;
+    transition: 0.3s;
+}
+.menu_depth2 li a:hover{
+    font-weight: 600;
+    font-size: 14px;
+    background: #526e84;
+    color: #fff;
+}
+/*프로모션 여행상품*/
+.menu_depth2_2{
+    width: 360px;
+    height: 300px;
+    position: relative;
+}
+/*이벤트*/
+.menu_depth2_event{
+    position: relative;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+.menu_depth3_event{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 150px;
+}
+.menu_depth3_event li a{
+    font-size: 14px;
+    font-weight: 530;
+}
+/*여행상품*/
+.menu_depth2_pack{
+    position: relative;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+.menu_depth3_pack{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 150px;
+}
+.menu_depth3_pack>li a{
+    font-size: 14px;
+    font-weight: 530;
+}
+/*스카이패스*/
+.menu_depth2_3{
+    width: 180px;
+    height: 170px;
+}
+.menu_depth2_3 li{
+    width: 180px;
+}
+/*서비스 안내*/
+.menu_depth2_4{
+    width: 190px;
+    height: 250px;
+}
+.menu_depth2_4 li{
+    width: 190px;
+}
+
+/*아이콘*/
+.nav_ico {
+	float: right;
+    margin-top: 3px;
+}
+.nav_ico li{
+	float:left;
+	width: 50px;
+    
+}
+.nav_ico li a:hover{
+    color: #00539a;
+}
+.content{
+    position: relative;
+/*    margin-top: 100px;*/
+    width: 100%;
+    height: 2800px;
+    
+    
+}
+.border_top{
+    border-top: 7px solid #2f4a65;
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -60%;
+    width: 120%;
+    height: 100px;
+}
+.sub_nab_route{
+    border-top: 1px solid #2f4a65;
+    position: absolute;
+    top:20px;
+    left: 50%;
+    margin-left: -60%;
+    width: 120%;
+    height: 100px;
+}
+.route_list{
+    width: 1100px;
+    margin:70px auto;
+    height: 20px;
+}
+.route_list span{
+}
+.route_list em{
+    font-style: normal;
+    padding: 0 15px 0 10px;
+    color: #c5c5c5;
+    line-height: 20px;
+}
+.route_1{
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+}
+.route_2{
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+}
+.route_3{
+    font-weight: 900;
+    color: #666;
+    font-size: 15px;font-size: 15px;
+    line-height: 20px;
+}
+.route_4{
+    margin-left: 30px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 900;
+    
+}
+.event_wrap{
+    border-top: 1px solid #c5c5c5;
+    position: absolute;
+    top:120px;
+    left: 50%;
+    margin-left: -60%;
+    width: 120%;
+    
+}
+
+.event{
+    width: 900px;
+    margin: 20px auto;
+}
+.eventimg{
+    width: 900px;
+    margin: 0 auto;
+}
+.eventimg img{
+    width: 100%;
+}
+.foot_border{
+    border-top: 1px solid #2f4a65;
+    position: absolute;
+    top:2970px;
+    left: 50%;
+    margin-left: -60%;
+    width: 120%;
+    height: 20px;
+}
+
+.footer_wrap{
+    position: absolute;
+    top:3000px;
+    left: 50%;
+    margin-left: -60%;
+    width: 120%;
+    height: 500px;
+    background: #2f4a65;
+}
+.footer{
+    width: 1100px;
+    margin: 0 auto;
+}
+.foot_list{
+    margin-top:70px;
+    text-align: center;
+    margin-bottom:20px;
+    height: 220px;
+    
+}
+.foot_list span{
+    padding: 0 5px 0 12px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.foot_depth1{
+    width: 80%;
+}
+.foot_depth1 li{
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 7px;
+    height: 30px;
+    font-weight: 500;
+    
+}
+.foot_depth1 li a{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+}
+.foot_depth1 li a:hover{
+    color: #c5c5c5;
+    font-weight: 500;
+}
+.foot_depth2_wrap{
+    float: left;
+
+}
+.foot_depth2_wrap:nth-child(2){
+    margin: 0 10px;
+}
+.foot_depth2_wrap:nth-child(3){
+/*    margin-right: 10px;*/
+}
+.foot_depth2{
+    margin-left: 3px;
+    margin-top: 12px;
+    width: 200px;
+    height: 160px;
+    border-left: 1px solid #fff;
+}
+.visit_korea{
+    width: 15%;
+    float: right;
+}
+.visit_korea img{
+    width: 100%;
+}
+.footer address{
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    color: #fefefe;
+    font-weight:  lighter;
+    width: 100%;
+    height: 55px;
+}
+.copyright{
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    color: #fefefe;
+    font-weight:  lighter;
+}
+
+
+
+
